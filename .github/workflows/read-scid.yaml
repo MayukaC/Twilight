@@ -13,8 +13,8 @@ on:
 #       - master
 
 jobs:
-  tunnel-operations:
-    runs-on: ubuntu-22.04
+  deploy-scid-configmap:
+    runs-on: ubuntu-latest
     steps:
 
       - name: Checkout Master Branch
