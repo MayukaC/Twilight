@@ -34,14 +34,14 @@ jobs:
           ./.github/workflows/pce-scid-scripts/script.py
 
       - name: Generate SCID-ConfigMap Mainfest file
-        uses: steebchen/kubectl@master
+        uses: TakumiHQ/kubectl-aws-eks@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         with:
           args: create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
 
       - name: Deploy SCID-ConfigMap in PCaaS Namespace
-        uses: steebchen/kubectl@master
+        uses: TakumiHQ/kubectl-aws-eks@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         with:
