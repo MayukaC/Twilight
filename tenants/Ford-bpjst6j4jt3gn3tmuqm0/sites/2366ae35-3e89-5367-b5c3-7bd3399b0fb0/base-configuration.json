@@ -1,0 +1,1488 @@
+{
+	"$comment": "All sensitive values (e.g. passwords, proxy URLs) are encrypted",
+	"infrastructure": {
+		"racks": [
+			{
+				"componentId": "rack-001",
+				"role": "Initial Rack",
+				"updatable": [
+					"pdus",
+					"networkSwitches",
+					"servers",
+					"storageArrays"
+				],
+				"deletable": false,
+				"pdus": [
+					{
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "PDU Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.2"
+							}
+						],
+						"updatable": [
+							"hostName",
+							"networkConnections"
+						],
+						"deletable": false,
+						"componentId": "pdu-001",
+						"hostName": "gldc2h1-pdu001"
+					},
+					{
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "PDU Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.3"
+							}
+						],
+						"updatable": [
+							"hostName",
+							"networkConnections"
+						],
+						"deletable": false,
+						"componentId": "pdu-002",
+						"hostName": "gldc2h1-pdu002"
+					}
+				],
+				"networkSwitches": [
+					{
+						"role": "OOBM",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Network Switch Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.4"
+							}
+						],
+						"updatable": [
+							"hostName",
+							"networkConnections"
+						],
+						"deletable": false,
+						"componentId": "switch-001",
+						"hostName": "gldc2h1-oobm001"
+					},
+					{
+						"role": "OOBM",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Network Switch Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.4"
+							}
+						],
+						"updatable": [
+							"hostName",
+							"networkConnections"
+						],
+						"deletable": false,
+						"componentId": "switch-002",
+						"hostName": "gldc2h1-oobm001"
+					},
+					{
+						"role": "Compute",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Network Switch Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.6"
+							}
+						],
+						"updatable": [
+							"hostName",
+							"networkConnections"
+						],
+						"deletable": false,
+						"componentId": "switch-003",
+						"hostName": "gldc2h1-snet001"
+					},
+					{
+						"role": "Compute",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Network Switch Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.7"
+							}
+						],
+						"updatable": [
+							"hostName",
+							"networkConnections"
+						],
+						"deletable": false,
+						"componentId": "switch-004",
+						"hostName": "gldc2h1-snet002"
+					}
+				],
+				"storageArrays": [
+					{
+						"storageProtocol": "iSCSI",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Storage Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.8"
+							},
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Storage Management",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.9"
+							},
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Ctrl A Diagnostic IP",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.10"
+							},
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"purpose": "Ctrl B Diagnostic IP",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.11"
+							},
+							{
+								"networkName": "Storage iSCSI A Network",
+								"purpose": "iSCSI",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.7.2"
+							},
+							{
+								"networkName": "Storage iSCSI A Network",
+								"ipAddressType": "IPv4",
+								"purpose": "iSCSI Discovery IP",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.7.3"
+							},
+							{
+								"networkName": "Storage iSCSI B Network",
+								"purpose": "iSCSI",
+								"ipAddressType": "IPv4",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.8.2"
+							},
+							{
+								"networkName": "Storage iSCSI B Network",
+								"ipAddressType": "IPv4",
+								"purpose": "iSCSI Discovery IP",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.8.3"
+							}
+						],
+						"updatable": [
+							"hostName",
+							"groupName",
+							"storageProtocol",
+							"networkConnections"
+						],
+						"deletable": [
+							"groupName"
+						],
+						"componentId": "stor-001",
+						"hostName": "gldc2h1-sstor001"
+					}
+				],
+				"servers": [
+					{
+						"componentId": "server-001",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"ipAddressType": "IPv4",
+								"purpose": "iLO Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.110"
+							},
+							{
+								"networkName": "OS and Infrastructure Management Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Management Server Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.0.2"
+							},
+							{
+								"networkName": "Platform Data Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Platform Data",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.3.2"
+							},
+							{
+								"networkName": "Platform and GreenLake Services Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Platform And GreenLake Services",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.4.2"
+							}
+						],
+						"storageDevices": [
+							{
+								"storageDeviceType": "SSD",
+								"storageInterface": "SAS",
+								"totalCapacity": 800000000000,
+								"raidLevel": "RAID-1"
+							},
+							{
+								"storageDeviceType": "SSD",
+								"storageInterface": "NVME",
+								"totalCapacity": 3200000000000,
+								"raidLevel": "RAID-5"
+							}
+						],
+						"updatable": [
+							"networkConnections",
+							"hostName",
+							"iloHostName"
+						],
+						"deletable": false,
+						"hostName": "gldc2h1-scs01",
+						"iloHostName": "gldc2h1-ilo-scs01"
+					},
+					{
+						"componentId": "server-002",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"ipAddressType": "IPv4",
+								"purpose": "iLO Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.111"
+							},
+							{
+								"networkName": "OS and Infrastructure Management Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Management Server Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.0.3"
+							},
+							{
+								"networkName": "Platform Data Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Platform Data",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.3.3"
+							},
+							{
+								"networkName": "Platform and GreenLake Services Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Platform And GreenLake Services",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.4.3"
+							}
+						],
+						"storageDevices": [
+							{
+								"storageDeviceType": "SSD",
+								"storageInterface": "SAS",
+								"totalCapacity": 800000000000,
+								"raidLevel": "RAID-1"
+							},
+							{
+								"storageDeviceType": "SSD",
+								"storageInterface": "NVME",
+								"totalCapacity": 3200000000000,
+								"raidLevel": "RAID-5"
+							}
+						],
+						"updatable": [
+							"networkConnections",
+							"hostName",
+							"iloHostName"
+						],
+						"deletable": false,
+						"hostName": "gldc2h1-scs02",
+						"iloHostName": "gldc2h1-ilo-scs02"
+					},
+					{
+						"componentId": "server-003",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"ipAddressType": "IPv4",
+								"purpose": "iLO Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.112"
+							},
+							{
+								"networkName": "OS and Infrastructure Management Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Management Server Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.0.4"
+							},
+							{
+								"networkName": "Platform Data Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Platform Data",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.3.4"
+							},
+							{
+								"networkName": "Platform and GreenLake Services Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Platform And GreenLake Services",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.4.4"
+							}
+						],
+						"storageDevices": [
+							{
+								"storageDeviceType": "SSD",
+								"storageInterface": "SAS",
+								"totalCapacity": 800000000000,
+								"raidLevel": "RAID-1"
+							},
+							{
+								"storageDeviceType": "SSD",
+								"storageInterface": "NVME",
+								"totalCapacity": 3200000000000,
+								"raidLevel": "RAID-5"
+							}
+						],
+						"updatable": [
+							"networkConnections",
+							"hostName",
+							"iloHostName"
+						],
+						"deletable": false,
+						"hostName": "gldc2h1-scs03",
+						"iloHostName": "gldc2h1-ilo-scs03"
+					}
+				]
+			}
+		],
+		"updatable": [
+			"racks"
+		],
+		"deletable": false
+	},
+	"infrastructureManagement": {
+		"specificAttributes": {
+			"hypervisorCluster": {
+				"updatable": [
+					"virtualMachines"
+				],
+				"deletable": false,
+				"virtualMachines": [
+					{
+						"componentId": "vm-003",
+						"hostName": "gldc2h1-afc01",
+						"vmName": "afc01",
+						"type": "KVM",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Network Switch Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.12"
+							}
+						],
+						"accessCredentials": [
+							{
+								"target": "HOST",
+								"userName": "ENC[AES256_GCM,data:yXpC2Ls=,iv:J9DaCJGMuElxrubPEbVBtG/jAQzAcubxziNgJ3H+6jw=,tag:UWyFM7eW4Z/8LpmQG3iJcw==,type:str]",
+								"password": "ENC[AES256_GCM,data:vKdFdE7QlkxlgKi6,iv:a6ymAMF/0ztE60w2DZqGaQk3AbF16wMmZIJEV5rkgVo=,tag:3aUA95oXtcg8s905C2l1Ng==,type:str]",
+								"updatable": [
+									"password"
+								],
+								"deletable": false
+							}
+						],
+						"networkSettingsPath": "$.networkSettings",
+						"updatable": [
+							"hostName",
+							"vmName",
+							"accessCredentials",
+							"networkConnections"
+						],
+						"deletable": false
+					},
+					{
+						"componentId": "vm-004",
+						"hostName": "gldc2h1-afc02",
+						"vmName": "afc02",
+						"type": "KVM",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Network Switch Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.13"
+							}
+						],
+						"accessCredentials": [
+							{
+								"target": "HOST",
+								"userName": "ENC[AES256_GCM,data:w9ybzHo=,iv:PNcXsJok5k6sNezir+GnS2hL4ZFCcWaJFvjWJDQ5FF8=,tag:/RblkMfCn9cdB4sF03G63Q==,type:str]",
+								"password": "ENC[AES256_GCM,data:wNTf1Zg9Mq8b/JCv,iv:8j0T2ONGX6eXZWdgtOBYctCaItVmgUikd+VKUmFsM/8=,tag:xp9DvqNWL5j39YoLkUj2Qw==,type:str]",
+								"updatable": [
+									"password"
+								],
+								"deletable": false
+							}
+						],
+						"networkSettingsPath": "$.networkSettings",
+						"updatable": [
+							"hostName",
+							"vmName",
+							"accessCredentials",
+							"networkConnections"
+						],
+						"deletable": false
+					},
+					{
+						"componentId": "vm-005",
+						"hostName": "gldc2h1-afc03",
+						"vmName": "afc03",
+						"type": "KVM",
+						"networkConnections": [
+							{
+								"networkName": "Out of Band Management(OOBM) Network",
+								"ipAddressType": "IPv4",
+								"purpose": "Network Switch Management",
+								"updatable": [
+									"ipAddress"
+								],
+								"deletable": false,
+								"ipAddress": "172.28.1.14"
+							}
+						],
+						"accessCredentials": [
+							{
+								"target": "HOST",
+								"userName": "ENC[AES256_GCM,data:1ZLlnkA=,iv:XSrZkWEJm0yrMPWlYiFegq7NW7JusQnQ8oLzjvoeIRY=,tag:oLOhGRWnqQCp6/VntORIag==,type:str]",
+								"password": "ENC[AES256_GCM,data:qn5jATf584oL5tUl,iv:rQ5zBL4zEpIMdX8ftUS/NDdg8/pnCm8RgwpD/yHcMkg=,tag:l611L8inwzfS48uquIfKOw==,type:str]",
+								"updatable": [
+									"password"
+								],
+								"deletable": false
+							}
+						],
+						"networkSettingsPath": "$.networkSettings",
+						"updatable": [
+							"hostName",
+							"vmName",
+							"accessCredentials",
+							"networkConnections"
+						],
+						"deletable": false
+					}
+				]
+			},
+			"updatable": [
+				"hypervisorCluster"
+			],
+			"deletable": false
+		},
+		"arubaFabricComposerCluster": {
+			"fabrics": [
+				{
+					"fabricName": "Aruba-data",
+					"fabricDescription": "Fabric for Aruba Production switches",
+					"type": "Data",
+					"vsxMacLower": "02:00:00:00:01:00",
+					"vsxMacUpper": "02:00:00:00:01:ff",
+					"vrfData": [
+						{
+							"vrfName": "Foundation",
+							"$comment": "All ControlPlane VLANs will be part of Foundation VRF"
+						}
+					],
+					"updatable": false,
+					"deletable": false
+				},
+				{
+					"fabricName": "Aruba-management",
+					"fabricDescription": "Fabric for Aruba OOBM switches",
+					"type": "Management",
+					"vsxMacLower": "02:01:00:00:01:00",
+					"vsxMacUpper": "02:01:00:00:01:ff",
+					"updatable": false,
+					"deletable": false
+				}
+			],
+			"activeGateways": [
+				{
+					"networkName": "Out of Band Management(OOBM) Network",
+					"virtualMac": "12:01:00:00:01:01",
+					"updatable": false,
+					"deletable": false
+				},
+				{
+					"networkName": "OS and Infrastructure Management Network",
+					"virtualMac": "12:01:00:00:01:01",
+					"updatable": false,
+					"deletable": false
+				},
+				{
+					"networkName": "Platform Data Network",
+					"virtualMac": "12:01:00:00:01:01",
+					"updatable": false,
+					"deletable": false
+				},
+				{
+					"networkName": "Platform and GreenLake Services Network",
+					"virtualMac": "12:01:00:00:01:01",
+					"updatable": false,
+					"deletable": false
+				},
+				{
+					"networkName": "BMC Network",
+					"virtualMac": "12:01:00:00:01:01",
+					"updatable": false,
+					"deletable": false
+				},
+				{
+					"networkName": "Storage iSCSI A Network",
+					"virtualMac": "12:01:00:00:01:01",
+					"updatable": false,
+					"deletable": false
+				},
+				{
+					"networkName": "Storage iSCSI B Network",
+					"virtualMac": "12:01:00:00:01:01",
+					"updatable": false,
+					"deletable": false
+				}
+			],
+			"leafSpineRPIIPrange": [
+				{
+					"networkId": "172.28.254.0",
+					"subnetMask": "255.255.255.0"
+				}
+			],
+			"leafSpineUnderlayData": [
+				{
+					"vlanId": "2600",
+					"spineASN": "65010",
+					"leafASN": "65001"
+				}
+			],
+			"leafSpineOverlayData": [
+				{
+					"networkId": "172.28.253.0",
+					"subnetMask": "255.255.255.0"
+				}
+			],
+			"evpnData": [
+				{
+					"vniBase": "2000",
+					"asnPrefix": "65100",
+					"systemMacRange": {
+						"macLower": "02:00:00:55:01:00",
+						"macUpper": "02:00:00:55:01:FF"
+					}
+				}
+			],
+			"networkConnections": [
+				{
+					"networkName": "Out of Band Management(OOBM) Network",
+					"ipAddressType": "IPv4",
+					"purpose": "Network Switch Management",
+					"updatable": [
+						"ipAddress"
+					],
+					"deletable": false,
+					"ipAddress": "172.28.1.15"
+				}
+			],
+			"accessCredentials": [
+				{
+					"target": "CLUSTER",
+					"userName": "ENC[AES256_GCM,data:qtrEtXc=,iv:uT501ICbzFKyRTOi/dJp7KUbGAajeInNc48S3BCePRM=,tag:UukOe9TNdIjOHN4EHPmcDg==,type:str]",
+					"password": "ENC[AES256_GCM,data:FOEje/dSNgxjJ7EY,iv:toLVwriRU8m1K9y5gAOTiSVGrMh1/V+CZX6rv4ElJAE=,tag:gEwJ3P+qjU/q56BDK6GP3g==,type:str]",
+					"updatable": [
+						"userName",
+						"password"
+					],
+					"deletable": false
+				},
+				{
+					"target": "NETWORK_SWITCH",
+					"userName": "ENC[AES256_GCM,data:4FsT3cq+vioW,iv:z6RqDmtVrlepOe2X9Q0b79c4WXvoOP9nuMixpcmsl4o=,tag:VPkEB3hoHNcKOuTs4Nfwyg==,type:str]",
+					"password": "ENC[AES256_GCM,data:MQzGit2KJ+n+5oYU,iv:jkOdpwd1UvC1MtBExLGQpEpBvMPQs9liw8dGbe+Kcnc=,tag:0QzNtHwmgDftZOakdvJJQw==,type:str]",
+					"updatable": [
+						"userName",
+						"password"
+					],
+					"deletable": false
+				}
+			],
+			"arubaFabricComposers": [
+				{
+					"updatable": false,
+					"deletable": false,
+					"componentId": "afc-001",
+					"role": "Master",
+					"nodePath": "$.infrastructureManagement.specificAttributes.hypervisorCluster.virtualMachines[?(@.componentId=='vm-003')]"
+				},
+				{
+					"updatable": false,
+					"deletable": true,
+					"componentId": "afc-002",
+					"role": "Slave",
+					"nodePath": "$.infrastructureManagement.specificAttributes.hypervisorCluster.virtualMachines[?(@.componentId=='vm-004')]"
+				},
+				{
+					"updatable": false,
+					"deletable": true,
+					"componentId": "afc-003",
+					"role": "Slave",
+					"nodePath": "$.infrastructureManagement.specificAttributes.hypervisorCluster.virtualMachines[?(@.componentId=='vm-005')]"
+				}
+			],
+			"updatable": [
+				"activeGateways",
+				"networkConnections",
+				"accessCredentials",
+				"arubaFabricComposers"
+			],
+			"deletable": false
+		},
+		"glMetalDcc": {
+			"glMetalReservedValues": {
+				"vlanIdStart": 3500,
+				"vlanIdEnd": 3999,
+				"lagIdStart": 11,
+				"lagIdEnd": 138,
+				"evpnAsn": 62000,
+				"evpnMacRange": {
+					"macLower": "02:00:00:55:01:00",
+					"macUpper": "02:00:00:55:01:FF",
+					"updatable": false,
+					"deletable": false
+				},
+				"factoryIPPool": {
+					"networkId": "10.0.0.0",
+					"networkMask": "255.0.0.0",
+					"updatable": false,
+					"deletable": false
+				},
+				"updatable": false,
+				"deletable": false
+			},
+			"networkConnections": [
+				{
+					"networkName": "Out of Band Management(OOBM) Network",
+					"$comment": "GL Metal needs to reserve three consecutive IP addresses from 'Out of Band Management(OOBM) Network', These IP addresses are not shown in SmartCID GUI, when Network ID and mask are changed SmartCID code should automatically update these reserved consecetive IP addresses",
+					"ipAddress": "172.28.1.17",
+					"ipAddressType": "IPv4",
+					"purpose": "Network Switch Management",
+					"updatable": [
+						"ipAddress"
+					],
+					"deletable": false
+				}
+			],
+			"updatable": [
+				"networkConnections"
+			],
+			"deletable": false
+		},
+		"updatable": [
+			"arubaFabricComposerCluster",
+			"glMetalDcc",
+			"slingshotFmn",
+			"specificAttributes"
+		],
+		"deletable": false
+	},
+	"networks": [
+		{
+			"componentId": "nw-001",
+			"name": "Out of Band Management(OOBM) Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"iLO Management",
+				"PDU Management",
+				"Network Switch Management",
+				"Storage Management",
+				"AFC Management",
+				"Ctrl A Diagnostic IP",
+				"Ctrl B Diagnostic IP"
+			],
+			"preferredBandwidthGbps": 1,
+			"maxBandwidthGbps": 1,
+			"gatewayIpAddress": "172.28.1.1",
+			"networkId": "172.28.1.0",
+			"networkMask": "255.255.255.0",
+			"vlanId": 101,
+			"vlanType": "Tagged",
+			"vrfName": "Foundation",
+			"ipAddressPools": [
+				{
+					"$comment": "This data is added for CP automation and maintained by CP",
+					"startAddress": "172.28.1.110",
+					"endAddress": "172.28.1.160",
+					"purpose": "iLO Management",
+					"updatable": [
+						"startAddress",
+						"endAddress"
+					],
+					"deletable": false
+				}
+			],
+			"updatable": [
+				"gatewayIpAddress",
+				"networkId",
+				"networkMask",
+				"vlanId",
+				"ipAddressPools"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-002",
+			"name": "OS and Infrastructure Management Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"Management Server Management"
+			],
+			"preferredBandwidthGbps": 1,
+			"maxBandwidthGbps": 1,
+			"vlanId": 100,
+			"gatewayIpAddress": "172.28.0.1",
+			"networkId": "172.28.0.0",
+			"networkMask": "255.255.255.0",
+			"vlanType": "Tagged",
+			"vrfName": "Foundation",
+			"updatable": [
+				"gatewayIpAddress",
+				"networkId",
+				"networkMask",
+				"vlanId"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-003",
+			"name": "Platform Data Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"Platform Data"
+			],
+			"preferredBandwidthGbps": 25,
+			"maxBandwidthGbps": 25,
+			"vlanId": 103,
+			"gatewayIpAddress": "172.28.3.1",
+			"networkId": "172.28.3.0",
+			"networkMask": "255.255.255.0",
+			"vlanType": "Tagged",
+			"vrfName": "Foundation",
+			"updatable": [
+				"preferredBandwidthGbps",
+				"maxBandwidthGbps",
+				"gatewayIpAddress",
+				"networkId",
+				"networkMask",
+				"vlanId"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-004",
+			"name": "Platform and GreenLake Services Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"Platform And GreenLake Services"
+			],
+			"preferredBandwidthGbps": 25,
+			"maxBandwidthGbps": 25,
+			"vlanId": 104,
+			"gatewayIpAddress": "172.28.4.1",
+			"networkId": "172.28.4.0",
+			"networkMask": "255.255.255.0",
+			"vlanType": "Tagged",
+			"vrfName": "Foundation",
+			"updatable": [
+				"preferredBandwidthGbps",
+				"maxBandwidthGbps",
+				"gatewayIpAddress",
+				"networkId",
+				"networkMask",
+				"vlanId"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-005",
+			"name": "Dead Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"Dead Network"
+			],
+			"preferredBandwidthGbps": 1,
+			"maxBandwidthGbps": 10,
+			"vlanId": 99,
+			"updatable": false,
+			"deletable": false
+		},
+		{
+			"componentId": "nw-006",
+			"name": "Aruba VSX Keep Alive",
+			"type": "Ethernet",
+			"purposeList": [
+				"KA"
+			],
+			"networkId": "172.28.255.0",
+			"$comment": "minimum networkmask 255.255.255.0 or greater required",
+			"networkMask": "255.255.255.0",
+			"updatable": [
+				"networkId",
+				"networkMask"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-009",
+			"name": "GreenLake Provisioning Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"GL Metal Provisioning"
+			],
+			"preferredBandwidthGbps": 10,
+			"maxBandwidthGbps": 25,
+			"networkId": "172.21.0.0",
+			"networkMask": "255.255.0.0",
+			"vlanId": 105,
+			"vlanType": "Native",
+			"updatable": [
+				"networkId",
+				"networkMask",
+				"vlanId"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-010",
+			"name": "BMC Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"BMC iLO"
+			],
+			"preferredBandwidthGbps": 10,
+			"maxBandwidthGbps": 25,
+			"networkId": "172.22.0.0",
+			"networkMask": "255.255.192.0",
+			"gatewayIpAddress": "172.22.0.1",
+			"vlanId": 102,
+			"vlanType": "Native",
+			"vrfName": "Foundation",
+			"updatable": [
+				"gatewayIpAddress",
+				"networkId",
+				"networkMask",
+				"vlanId"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-011",
+			"name": "Foundation Services External Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"FS External",
+				"GL Metal Primary"
+			],
+			"preferredBandwidthGbps": 10,
+			"maxBandwidthGbps": 25,
+			"networkId": "10.180.20.0",
+			"$comment": "minimum networkmask 255.255.255.0 or greater required. outboundGateway is customer's gateway/firewall for outbound internet access.",
+			"networkMask": "255.255.255.0",
+			"outboundGateway": "10.180.20.10",
+			"vlanId": 800,
+			"vlanType": "Native",
+			"ipAddressPools": [
+				{
+					"$comment": "This data is for Metal owned/reserved IP range within FS External subnet.",
+					"startAddress": "10.180.20.50",
+					"endAddress": "10.180.20.150",
+					"purpose": "GL Metal Primary",
+					"updatable": [
+						"startAddress",
+						"endAddress"
+					],
+					"deletable": false
+				}
+			],
+			"specificAttributes": {
+				"dnsIpAddress": "19.69.0.246",
+				"ntpIpAddress": "19.211.5.1",
+				"$comment": "value of proxy URL willbe encrypted using SOPS with AWS KMS Key",
+				"proxyUrl": "ENC[AES256_GCM,data:GYZjEmocF845X2uzEU1G/W/bI/DvIrmrPqEU,iv:M1ss8xBe3jonzYJSmid1Xq2nADhm5nZhqhUzdP6K65o=,tag:KTElzjNZ6aDJRmiCy1qQOg==,type:str]",
+				"updatable": [
+					"dnsIpAddress",
+					"ntpIpAddress",
+					"proxyUrl"
+				],
+				"deletable": false
+			},
+			"updatable": [
+				"preferredBandwidthGbps",
+				"maxBandwidthGbps",
+				"networkId",
+				"networkMask",
+				"outboundGateway",
+				"vlanId",
+				"ipAddressPools",
+				"specificAttributes"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-012",
+			"name": "pfSense Sync Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"pfSense Sync"
+			],
+			"preferredBandwidthGbps": 1,
+			"maxBandwidthGbps": 1,
+			"vlanId": 110,
+			"networkId": "172.28.252.0",
+			"networkMask": "255.255.255.248",
+			"vlanType": "Tagged",
+			"updatable": [
+				"networkId",
+				"networkMask",
+				"vlanId"
+			],
+			"deletable": false
+		},
+		{
+			"componentId": "nw-034",
+			"name": "GL Metal Telemetry",
+			"type": "Ethernet",
+			"purposeList": [
+				"GL Metal Telemetry"
+			],
+			"preferredBandwidthGbps": 10,
+			"maxBandwidthGbps": 25,
+			"networkId": "172.22.64.0",
+			"$comment": "Network for GL Metal collection of telemetry data from deployed instances for purposes of SLA",
+			"networkMask": "255.255.192.0",
+			"vlanId": 106,
+			"vlanType": "Native",
+			"ipAddressPools": [
+				{
+					"$comment": "This data is for Metal",
+					"startAddress": "172.22.64.11",
+					"endAddress": "172.22.127.254",
+					"purpose": "GL Metal Telemetry",
+					"updatable": false,
+					"deletable": false
+				}
+			],
+			"updatable": false,
+			"deletable": false
+		},
+		{
+			"componentId": "nw-007",
+			"name": "Storage iSCSI A Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"iSCSI",
+				"iSCSI Discovery IP"
+			],
+			"networkId": "172.28.7.0",
+			"$comment": "minimum networkmask 255.255.255.0 or greater required",
+			"networkMask": "255.255.255.0",
+			"gatewayIpAddress": "172.28.7.1",
+			"vlanId": 107,
+			"vrfName": "default",
+			"vlanType": "Native",
+			"updatable": [
+				"networkId",
+				"networkMask",
+				"vlanId",
+				"gatewayIpAddress"
+			],
+			"deletable": true
+		},
+		{
+			"componentId": "nw-008",
+			"name": "Storage iSCSI B Network",
+			"type": "Ethernet",
+			"purposeList": [
+				"iSCSI",
+				"iSCSI Discovery IP"
+			],
+			"networkId": "172.28.8.0",
+			"$comment": "minimum networkmask 255.255.255.0 or greater required",
+			"networkMask": "255.255.255.0",
+			"gatewayIpAddress": "172.28.8.1",
+			"vlanId": 108,
+			"vrfName": "default",
+			"vlanType": "Native",
+			"updatable": [
+				"networkId",
+				"networkMask",
+				"vlanId",
+				"gatewayIpAddress"
+			],
+			"deletable": true
+		}
+	],
+	"customer": {
+		"name": "Ford Motor Company",
+		"addresses": [
+			{
+				"type": "communication",
+				"updatable": [
+					"building",
+					"street",
+					"city",
+					"state",
+					"country",
+					"zip",
+					"region"
+				],
+				"deletable": false,
+				"building": "Flatrock EDC DH1",
+				"street": "23130 Gibraltar Road",
+				"city": "Flat Rock",
+				"state": "MI",
+				"country": "United States",
+				"zip": "48134",
+				"region": "AMERICAS"
+			},
+			{
+				"type": "installation",
+				"updatable": [
+					"building",
+					"street",
+					"city",
+					"state",
+					"country",
+					"zip",
+					"region"
+				],
+				"deletable": false,
+				"building": "Flatrock EDC DH1",
+				"street": "23130 Gibraltar Road",
+				"city": "Flat Rock",
+				"state": "MI",
+				"country": "United States",
+				"zip": "48134",
+				"region": "AMERICAS"
+			}
+		],
+		"updatable": [
+			"name",
+			"addresses"
+		],
+		"deletable": false
+	},
+	"collaborators": [
+		{
+			"name": "Amit Kumar",
+			"email": "amit.kumar3@hpe.com",
+			"phoneNumber": "919845083542",
+			"role": "CM CSO",
+			"availability": "1:30PM - 10:30PM IST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		},
+		{
+			"name": "Greg Peat",
+			"email": "greg.peat@hpe.com",
+			"phoneNumber": "16145603512",
+			"role": "Customer Success Manager ",
+			"availability": "9 AM - 5 PM EST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		},
+		{
+			"name": "Greg Blackmer",
+			"email": "greg.blackmer@hpe.com",
+			"phoneNumber": "14046482496",
+			"role": "CM CSO",
+			"availability": "9 AM - 5 PM EST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		},
+		{
+			"name": "Kent Klitzke",
+			"email": "kent.klitzke@hpe.com",
+			"phoneNumber": "12483186388",
+			"role": "Chief Technologist",
+			"availability": "9 AM - 5 PM EST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		},
+		{
+			"name": "Alfred Richardson",
+			"email": "ajrich@hpe.com",
+			"phoneNumber": "14709855610",
+			"role": "CM CSO",
+			"availability": "9 AM - 5 PM MST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		},
+		{
+			"name": "Toanchan Nguyen",
+			"email": "toanchan.nguyen@hpe.com",
+			"phoneNumber": "18325020402",
+			"role": "Factory Engineer",
+			"availability": "9 AM - 5 PM CST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		},
+		{
+			"name": "Ben Peyechu",
+			"email": "benedict.peyechu@hpe.com",
+			"phoneNumber": "12404418745",
+			"role": "CM Engineering",
+			"availability": "9 AM - 5 PM CST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		},
+		{
+			"name": "Richard Cutler",
+			"email": "richard.cutler@hpe.com",
+			"phoneNumber": "12489744489",
+			"role": "Server Architect",
+			"availability": "9 AM - 5 PM EST",
+			"updatable": [
+				"name",
+				"role",
+				"email",
+				"phoneNumber",
+				"availability"
+			],
+			"deletable": true
+		}
+	],
+	"customerSite": {
+		"timeSettings": {
+			"updatable": true,
+			"deletable": false,
+			"timeZoneOffset": "UTC-5",
+			"dayLightSavingEnabled": false,
+			"timeZoneName": "Eastern Standard Time"
+		},
+		"uplinkDetails": {
+			"updatable": [
+				"switchType",
+				"manufacturer",
+				"model",
+				"partNumber",
+				"portSpeedGbps",
+				"cableType",
+				"networkTransceiverType",
+				"totalConnectionCount",
+				"linkAggregationProtocolType",
+				"linkAggregationPortMode"
+			],
+			"deletable": false,
+			"switchType": "Top of Rack",
+			"manufacturer": "Cisco",
+			"model": "N9K-C9336C-FX2",
+			"partNumber": "N9K-C9336C-FX2",
+			"totalConnectionCount": 4,
+			"linkAggregationProtocolType": "Static LACP Link Aggregation",
+			"linkAggregationPortMode": "Trunk",
+			"cableType": "Direct Attach Copper Cable(DAC)",
+			"networkTransceiverType": "QSFP+",
+			"portSpeedGbps": 40
+		},
+		"updatable": [
+			"snmpSettings",
+			"timeSettings",
+			"powerFeedPosition",
+			"maxPowerPerRackkWh",
+			"uplinkDetails"
+		],
+		"deletable": false,
+		"powerFeedPosition": "Top",
+		"maxPowerPerRackkWh": 17
+	},
+	"hpeIntegrationCenter": {
+		"dnsSettings": {
+			"primaryDnsIpAddress": "8.8.8.8",
+			"updatable": [
+				"primaryDnsIpAddress",
+				"secondaryDnsIpAddress",
+				"domainSearchName"
+			],
+			"deletable": true,
+			"secondaryDnsIpAddress": "1.1.1.1",
+			"domainSearchName": "cgw-hpe.net"
+		},
+		"ntpSettings": [
+			{
+				"ipAddress": "78.108.96.197",
+				"updatable": true,
+				"deletable": false
+			},
+			{
+				"ipAddress": "195.58.37.195",
+				"updatable": true,
+				"deletable": true
+			},
+			{
+				"ipAddress": "81.27.192.20",
+				"updatable": true,
+				"deletable": true
+			}
+		],
+		"proxySettings": {
+			"updatable": true,
+			"deletable": false
+		},
+		"updatable": [
+			"dnsSettings",
+			"ntpSettings",
+			"proxySettings",
+			"installationSystemIp",
+			"cmoToolKitIp"
+		],
+		"deletable": false,
+		"installationSystemIp": "172.28.1.252",
+		"cmoToolKitIp": "172.28.1.251"
+	},
+	"solutionNetworkSettings": {
+		"$comment": "SmartCID backend automatically copies Control Plane DRBD cluster virtual IP as IP address for DNS and NTP here. SmartCID will replace with Squid Cluster LAN CARP Virtual IPAddress for proxy here. SmartCID backend copies Control Plane ipAddress for networkConnection purpose==Management Server Management for each CP server for cpNativeHostOs entries here. SmartCID backend copies Control Plane infrastructureManagement -\u003e applications where name==MetalLB -\u003e specificAttributes -\u003e startExternalIPAddress \u0026 endExternalIPAddress for cpMetalLB entries here..",
+		"cpNativeHostOs": [
+			"172.28.0.2",
+			"172.28.0.3",
+			"172.28.0.4"
+		],
+		"cpMetalLB": {
+			"startAddress": "172.28.4.51",
+			"endAddress": "172.28.4.100"
+		},
+		"dnsSettings": {
+			"ipAddresses": [
+				"172.28.0.121"
+			],
+			"searchDomainName": "cgw-hpe.net"
+		},
+		"ntpSettings": [
+			"172.28.0.121"
+		],
+		"proxySettings": {
+			"httpProxy": "ENC[AES256_GCM,data:lIhrL3xOqXDqSYCM0k7BgTvp4ume1KU=,iv:DuBlSmTOd6KVHEHXA81Z3XI47q83A8J/VjGsZ1hP5o4=,tag:PWqX/A6bBw2CT1LXhDjP8Q==,type:str]",
+			"httpsProxy": "ENC[AES256_GCM,data:g/aAOQB+txYRMYnN4GFMbFWUJiDQjGY=,iv:Ly0tnvSSQdmd4uo3x1lSitVqkPNg/fuX2xR3pgm4Enk=,tag:ZYFYYT4LZz2kLvwHIPQlAg==,type:str]"
+		},
+		"snmpSettings": {
+			"version": "SNMPv3",
+			"targetIPAddress": "172.28.10.10",
+			"targetPort": 162,
+			"contact": "email@company.com",
+			"securityName": "test-name",
+			"securityLevel": "authPriv",
+			"userName": "ENC[AES256_GCM,data:3vc9aQ==,iv:iIXnY5UytO+S5osb0Kx6ZJ+8OTL44Ng80gDxDsri3y4=,tag:i8UOeIjp29N6YGAwt+CMwg==,type:str]",
+			"groupName": "ServerGroup",
+			"authenticationPassPhrase": "ENC[AES256_GCM,data:Sr1InMorpM1rjsu4,iv:gdEDbVpjckaoCkf7chm7e1yr7XH8ns57QA+CImcK1us=,tag:9p28v+98Gwyqlj+nlAHHuA==,type:str]",
+			"authenticationType": "MD5",
+			"encryptionPassPhrase": "ENC[AES256_GCM,data:qDBIRbzkJcJn,iv:ViE7HYsA/3OohnwwQfvezgjkcru2oJyvRkDAqnq9on0=,tag:x3d3/Yegh7vC/iJGT1zJqQ==,type:str]",
+			"encryptionType": "AES",
+			"community": "gl_common",
+			"location": "lab-location",
+			"updatable": [
+				"targetIPAddress",
+				"targetPort",
+				"contact",
+				"groupName",
+				"userName",
+				"authenticationType",
+				"authenticationPassPhrase",
+				"encryptionType",
+				"encryptionPassPhrase",
+				"community",
+				"location"
+			],
+			"deletable": false
+		},
+		"updatable": [
+			"snmpSettings"
+		],
+		"deletable": false
+	},
+	"updatable": [
+		"hostNamePrefix",
+		"infrastructure",
+		"infrastructureManagement",
+		"networks",
+		"customer",
+		"collaborators",
+		"customerSite",
+		"hpeIntegrationCenter",
+		"solutionNetworkSettings"
+	],
+	"deletable": false,
+	"createdBy": "ajrich@hpe.com",
+	"createdOn": "2023-01-23 14:12:15",
+	"lastUpdatedBy": "ajrich@hpe.com",
+	"lastUpdatedOn": "2023-01-23 22:54:18",
+	"hostNamePrefix": "gldc2h1-",
+	"sops": {
+		"kms": [
+			{
+				"arn": "arn:aws:kms:us-west-2:466322112543:key/4cfa36c4-1c8f-46b5-adc3-54deab8d28e2",
+				"role": "arn:aws:iam::466322112543:role/sops-common-services-role",
+				"created_at": "2023-01-27T17:43:24Z",
+				"enc": "AQICAHiptpDoQ70Fm6fFje1NatVxbLcWnB/GkhvuqeheVEFe4wGRsiUIlLmOCmjPToS9PGd0AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMyszGptprfec7Ann8AgEQgDvA+CW8E9+asAH1wWr+PGXrit9N4dX/eT3OL7gGqSg1E3Ga3qCdLSGpMFZziEES9CydKJOB3xVDNShT/Q==",
+				"aws_profile": ""
+			}
+		],
+		"gcp_kms": null,
+		"azure_kv": null,
+		"hc_vault": null,
+		"age": null,
+		"lastmodified": "2023-01-27T17:43:25Z",
+		"mac": "ENC[AES256_GCM,data:IoDv94jLA1bJu6FYpcOb8CYQ5hK2Uritjm/QziyZ55++Spj7hmgmYl14VdUNBtbT5xl4TNg3PrbJ2BVvxY7cDrNd2YDw1Mlx5lA4rUf4g90q2QKodyequvkVOd+L9yvTkEeVE4TL3GIjvJqgZePxXGOwNI7Itmghq0ntj/ec804=,iv:SBVW35nr0XaBZhCr4tsEGXL/cWQrVDQIFeyGrJgH+/Y=,tag:wXc0I7umpw7M9LkQTlzTpw==,type:str]",
+		"pgp": null,
+		"encrypted_regex": "userName|password|adminPassword|authenticationPassPhrase|encryptionPassPhrase|httpProxy|httpsProxy|proxyUrl",
+		"version": "3.7.1"
+	}
+}

@@ -1,0 +1,2548 @@
+{
+	"version": "1.0.0",
+	"tenantId": "c2cc1mvs57r58ikoq8d0",
+	"tenantName": "HPE GreenLake COE",
+	"siteId": "b90f395e-a4af-5a5a-ae1d-f9a08574fb98",
+	"hpeOrderDetails": [
+		{
+			"ucId": "5130437203-01",
+			"updatable": [
+				"hpeSalesOrderNumber",
+				"sfdcOpportunityId",
+				"comments"
+			],
+			"deletable": true,
+			"hpeSalesOrderNumber": "testbyDeependra",
+			"sfdcOpportunityId": "OPE-1122334455",
+			"comments": "test"
+		}
+	],
+	"createdBy": "mithun-raj.panikkassery-jayaraj@hpe.com",
+	"createdOn": "2022-12-13 16:48:13",
+	"lastUpdatedBy": "deependra.kumar@hpe.com",
+	"lastUpdatedOn": "2022-12-15 12:46:06",
+	"updatable": [
+		"tenantId",
+		"siteId",
+		"hpeOrderDetails",
+		"racks"
+	],
+	"deletable": false,
+	"racks": [
+		{
+			"componentId": "rack-001",
+			"pdus": [
+				{
+					"componentId": "pdu-001",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:m21P9kk=,iv:rBDh/jGDV52NwLSfQgSGjFn89NuieL//N17AAiawURc=,tag:/6IJ2ETw62yv2aHKnKciug==,type:str]",
+							"password": "ENC[AES256_GCM,data:b7QN3hNiC1TBP0R6,iv:F2UBgQRQLBV0+ylpgW1DcrxCr2XDq7XX+cLMwZbpfBk=,tag:+w6dhvu1qJqtqoNXmAKyNw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				},
+				{
+					"componentId": "pdu-002",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:hqdTZ0A=,iv:y3MgImWS1dvDPeI/zzt9ckWsYELZ1SsNj+ChsqIDbMQ=,tag:Ti0kEYMVH3sehnFO5FND4A==,type:str]",
+							"password": "ENC[AES256_GCM,data:7MPtFYHdmJfnD8Ih,iv:3BEGwuNg/lfk8+6Y2mIbwvtM4fVPh1Yhi1FGVEuQyRU=,tag:PGxICMXo1ntMYvi0I8M8UQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				}
+			],
+			"networkSwitches": [
+				{
+					"componentId": "switch-001",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:NAkykLg=,iv:DBb1YQQK2XMXPmmXRVzHx8n2ZWkcJLaTq2Q0FT+jpRE=,tag:DgDJoZGpQjGw3DpRYsHupQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:Z7R3/sGPGx+qKrKC,iv:KEYZtsu5JPYZFe20AUTJseg2Q8BeuGtEso3CtvfY0G8=,tag:V5+ufP4W3pRZJeKXCSTfig==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 42,
+					"rackElevationEnd": 42
+				},
+				{
+					"componentId": "switch-002",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:UOSAc9g=,iv:lK26BkLh5Y+PEu6WLkf5z5JTus8Ulg6l/UMAFAkrjT8=,tag:weS9pC5yrxrvrnXbnVB2Ng==,type:str]",
+							"password": "ENC[AES256_GCM,data:uzP8Rba2j9OKv9d6,iv:XkXF7X5gVpqOaBxC82m0vVwi0FqN3hjSHVMJtzz/zzY=,tag:IvrQSCAHF3iHIAjd34QWxA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 40,
+					"rackElevationEnd": 40
+				},
+				{
+					"componentId": "switch-003",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:1kk7oHo=,iv:auYaFk6PIXKxP5lfw19lVMDFq+ZrSvGNtOJ7EY7/KRk=,tag:TUW622xXdWRwq4p4js1eDw==,type:str]",
+							"password": "ENC[AES256_GCM,data:1+pPdhPK//0E+Iyt,iv:9p/qg3+CqiEttmVJ8fPz4cJN/opxevOVr4a24fUeFKo=,tag:kSb7A3gJholfCt8fIXlNpw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 38,
+					"rackElevationEnd": 38
+				},
+				{
+					"componentId": "switch-004",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:hYdosQ4=,iv:Kd9/VZGaP/+Ms2QwNGy3zSddtOnNPh64iKYiyYQsHoU=,tag:Ivjvf52hKmGIjtW8EC8cvw==,type:str]",
+							"password": "ENC[AES256_GCM,data:xaagYDsov2nR2YuS,iv:4qNUZitxHRlmeUBHQd5yt+rZj5UpDMwEP0bXi50JPOw=,tag:oByHjwyKBra6HjojO7SZOQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 37,
+					"rackElevationEnd": 37
+				}
+			],
+			"servers": [
+				{
+					"componentId": "server-001",
+					"type": "DL325",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:+61mcJTwJjoDoXM+LQ==,iv:H7DKQtdU81fjgj0cxe7Ocpxw4BuJBdscLpSszs/yQ3E=,tag:MgCS5hmBIAkOLoOdB4EMoQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:o4Bk/y7wvxqtZDZTGA==,iv:yJ6okACkSWYBp03IMCz5BanQUx27U4SJFphiv04kzjY=,tag:w/jhGcFA3ZPHfpHZDL9xxw==,type:str]"
+						},
+						{
+							"target": "HOST",
+							"userName": "ENC[AES256_GCM,data:OJaXNQ==,iv:WodVfTqAjJQ21y0P1czkQ2Q1ONAqFOuykvVn19A01lY=,tag:UXBlQ4mttzsZrKsJjvmPkg==,type:str]",
+							"password": "ENC[AES256_GCM,data:Tf6EraTn6fNamntn,iv:AMsPsDOSH3o+vpE87YWd2H3SUFKfyfhxFjgYnKZq8Mk=,tag:S4x07s441lLZsbiU++TrXQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						},
+						{
+							"target": "ILO",
+							"userName": "ENC[AES256_GCM,data:hLLK1n4=,iv:EyboYcRDUNgrDKXo3XZGftC00NYVMk4QqaDkfM0/L9Y=,tag:2WUaESXaCjWzStemWu/EXA==,type:str]",
+							"password": "ENC[AES256_GCM,data:dHGXWn4a9uCHLnC4Y9U=,iv:0scNZcFuQEr2oAw6prkcSbM9TG0c9acTCry/S30raqs=,tag:eKj9G3MJtibM3wetlfkyXA==,type:str]",
+							"updatable": [
+								"userName",
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"lighthouseModuleId": "B3.AP64.384.1xE25-2.1xE10-2.2x800.8xN3200.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "ControlPlane",
+					"rackElevationStart": 35,
+					"rackElevationEnd": 35
+				},
+				{
+					"componentId": "server-002",
+					"type": "DL325",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:a2ancQkM06d1UBbdxw==,iv:bBXz3fgYqYaIvQQCSs2t6y61rDSomvkmaIm1pRw1NG0=,tag:/xe+ovYzELw9GWK1+yiEvA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:hI1WSbz3jyJD2zL1Pg==,iv:YSyPOb35CvFN0KGMRq+SPYW1OhZsh3KdQtPTLcs0Uh4=,tag:7wFsQxvo2bJhfW1PgJuQCA==,type:str]"
+						},
+						{
+							"target": "HOST",
+							"userName": "ENC[AES256_GCM,data:6GgJHg==,iv:mQIF9cmZQRQXbLz/MfE7woVzRL0Q0njkVLULQpRl6N0=,tag:grixhDCPrSxJzKdv7WbUNg==,type:str]",
+							"password": "ENC[AES256_GCM,data:F5Hweuni2bCSk6u2,iv:dHyFZhIh2OkqphfIS/eK5HFhrR6L68Uq50pp7yT8u9Q=,tag:GA8YJQP7tHCo3X/6Bt6o4g==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						},
+						{
+							"target": "ILO",
+							"userName": "ENC[AES256_GCM,data:reAuhws=,iv:g2L19OIry0rstmbYD6vRlGaqG9mxViv8XzGNV8kv/PU=,tag:uFVL+9k3Qq8SsyVa55/fEQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:KhOd57P4nWRL/rVU5+Q=,iv:9qsTVwpgdMmL3yiJkIruLkfcnsNNLAMHtXeZS1OjlNc=,tag:8E1fon7G3GPWVIgCbYeDbQ==,type:str]",
+							"updatable": [
+								"userName",
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"lighthouseModuleId": "B3.AP64.384.1xE25-2.1xE10-2.2x800.8xN3200.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "ControlPlane",
+					"rackElevationStart": 34,
+					"rackElevationEnd": 34
+				},
+				{
+					"componentId": "server-003",
+					"type": "DL325",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:eq9YGWWk3FOGgwlvrA==,iv:2ToQkuLy15G1fWXBd5TqLTASJmi1/i2ji+gMIENBVoU=,tag:bHX922X5bEZTcXPQm3r1Ig==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:4SXwFMNda6kCNd4sHg==,iv:/lIAsn/9SNPzDLq3+byewU7eI7T/tlyWD63xfiZWN8o=,tag:lM4PlFTKsR0rG54UUaRDbw==,type:str]"
+						},
+						{
+							"target": "HOST",
+							"userName": "ENC[AES256_GCM,data:NHq2sw==,iv:d2hjXkF10XXOULd2iZFR8gXnbTb5vNbBatrmUz6saxs=,tag:7IMT5fttdVNppp7yB7IQ7g==,type:str]",
+							"password": "ENC[AES256_GCM,data:GHLOTNP1MB0Yctp1,iv:GVP4caqUUpMMDF4fymxMUt/BWClZZReO8HmzGIFH6/g=,tag:nWRREfc+aWLF41+Eo9hTsw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						},
+						{
+							"target": "ILO",
+							"userName": "ENC[AES256_GCM,data:optxQsU=,iv:xJldukFQeP8It9jZlyyFJTBC8mrTnDJMhprC3jczmuk=,tag:txSTyRNJBpE7K8/uN0JJUQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:Ir419Ek6RTOVXIyL++4=,iv:y9tggdyZ1N7w+8sePoAPV4J4jN1qz99swzbwsLecJcU=,tag:UdpMxC4rgrgOo5FPyDPTig==,type:str]",
+							"updatable": [
+								"userName",
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"lighthouseModuleId": "B3.AP64.384.1xE25-2.1xE10-2.2x800.8xN3200.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "ControlPlane",
+					"rackElevationStart": 33,
+					"rackElevationEnd": 33
+				},
+				{
+					"componentId": "server-005",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:GR3fMUsE/hi4W1V+RQ==,iv:yNbxBxtn2wgtSxqYKcSmOtB74auQQIquxVkg0fMCW/8=,tag:cVSE0VBlrNAaexMBTeAlng==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:kXOn6GKF0ssh0re/Tw==,iv:KGk+hI6eh5YJh6RHWuIxRuIl2dyzpdjXWcvQmfbaHIk=,tag:ZzkziribGMjPUbYHSVcARw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 1,
+					"rackElevationEnd": 1
+				},
+				{
+					"componentId": "server-006",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:CHij054OgfEPqaiIJA==,iv:fcvgxVzdCFp3oj5rZvQyZB010Brf6skak3gO5xdH1VE=,tag:Kx3uvP5J3R7JgoTu2DpYmA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:cs2+v9qZlq3tgjtTSQ==,iv:GdINgagfCWLiMUryxn48LiQVNfALEHm3++qSJldkq8Q=,tag:QnksarI8rOdwxonr7QPNDA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 2,
+					"rackElevationEnd": 2
+				},
+				{
+					"componentId": "server-007",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:KUO/A/iKvg2BJ/Fbsg==,iv:wsuXguUBf+Q56lVs6kUes5TSSa30NwLpgP514a758oc=,tag:nv/w/9jkBD9mL2raqKVI4Q==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:eM7VjoVHgRgUFcjXvw==,iv:7whYY/npIex4NcYBMqrUgaN1ncCGfI/0AOjG/7+uEDA=,tag:xskSfYl1AR2Mo3M0hHvoFQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 3,
+					"rackElevationEnd": 3
+				},
+				{
+					"componentId": "server-008",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:nkR+W6JGblOwsgDnxw==,iv:ZP5S32ULwnKXwoBdTTRuDPSATJQl/sCZZF1zt9gzAt8=,tag:QF1dXNHwfpXDt1J/ZQwtMA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:pj7uWtgfhL8I8X+RTg==,iv:H5wYyMDxHxhWnUMk4Xv5ViJVgJBZQJMcP4oxAR5wHmE=,tag:BxCBWvHtaQ+ssQx2w69RYg==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 4,
+					"rackElevationEnd": 4
+				},
+				{
+					"componentId": "server-009",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:8lNAOj3+P9DF+afFWg==,iv:KOC/YX0KVBu2KUuhhabOi2QsYy3rGBWH6sTzcMgqs28=,tag:00zCGHg3l7e5hyDqFPJtgA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:csMOg5vw1QFWIasTtQ==,iv:N7nyAt3t3jviOLWo31S6F+g0zWyDefJ/5PYc/b/ey+g=,tag:cwk1a6+iEe7+DJ8dzMaZzQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 5,
+					"rackElevationEnd": 5
+				},
+				{
+					"componentId": "server-010",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:UCUGFxfgVx3tM01NEg==,iv:8JlZ67MewGmYV8uDokzVlrb3By+rUNKZ90ND+3gpZqg=,tag:+6oaPcyUh/TRFD8xe4386A==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:kVoLnYOor1uUjWh73A==,iv:0ECD9uXxoutATrio85doQCH6S5q3DsYSjrDmSL0Gd28=,tag:Nn2eJzmYfi1SkqJ52wbljA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 6,
+					"rackElevationEnd": 6
+				}
+			],
+			"updatable": true,
+			"deletable": false,
+			"storageArrays": [
+				{
+					"componentId": "stor-001",
+					"type": "HPE Alletra 6070",
+					"maxProtectedCapacityTB": 92,
+					"accessCredentials": [
+						{
+							"target": "STORAGE_ARRAY",
+							"userName": "ENC[AES256_GCM,data:jM3yEWQ=,iv:4ItNks8TMSu/3TvN41zOz30TNMZw8sWtBBC0MCRT8aI=,tag:eVD5FvM2/7wSlSk+cDDt0g==,type:str]",
+							"password": "ENC[AES256_GCM,data:nLK2KdiL/qZ/zXmV,iv:NtYuWiNaEKgnaIuDeHzQ+tKK6Iff9InNfI6yIlsKpmA=,tag:aQ480/fq9Ho4lAT1JggI2w==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationEnd": 31,
+					"rackElevationStart": 28
+				},
+				{
+					"componentId": "stor-003",
+					"type": "HPE Alletra 6070",
+					"maxProtectedCapacityTB": 276,
+					"accessCredentials": [
+						{
+							"target": "STORAGE_ARRAY",
+							"userName": "ENC[AES256_GCM,data:VHUFcGs=,iv:sxwz5e/BaYpOlDpvU0bn6Qh4XrqF2dSqgTK5yOt1/yw=,tag:yu8ArAAbazVNb6ES7lxrfA==,type:str]",
+							"password": "ENC[AES256_GCM,data:EXmd62XlrM2lfCvF,iv:xmyo8pvLa5in+INGg4sDrUx51G35Ej1dtobsU07yRL4=,tag:ATxpEwq1i45LWXzPrcAxvQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationEnd": 27,
+					"rackElevationStart": 24
+				},
+				{
+					"componentId": "stor-004",
+					"type": "HPE Alletra 6090",
+					"maxProtectedCapacityTB": 184,
+					"accessCredentials": [
+						{
+							"target": "STORAGE_ARRAY",
+							"userName": "ENC[AES256_GCM,data:rCFO5bQ=,iv:yXuWnxrVrO00mYVIxdAwM3l9MINSojq7+NnRrctSsgU=,tag:MvoVSlAoXNSid9YASDjdyg==,type:str]",
+							"password": "ENC[AES256_GCM,data:QxXm5cKDZAiV3Tb5,iv:GG7EqDbMI2QZdcF67BGjO3uQt61OD1h/WYODpZxdCEk=,tag:dKiKp3rODjwcy1VBkm8i0A==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationEnd": 23,
+					"rackElevationStart": 20
+				}
+			]
+		},
+		{
+			"componentId": "rack-002",
+			"pdus": [
+				{
+					"componentId": "pdu-003",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:VEXMgDU=,iv:41jOwt0v8qzDkINYoHH0kcO/FMSKMbfq2He3aT2zZDk=,tag:M4iPKhV+ngfT7+41djlE4A==,type:str]",
+							"password": "ENC[AES256_GCM,data:XHW/y3UZ/D/uBb6I,iv:NyNbyymfTzYHnOocvBytpf4AGqlc6+tFeX72f1Bh8QU=,tag:rY88pLWxK2XzCaVogO1xsQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				},
+				{
+					"componentId": "pdu-004",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:iA756w0=,iv:x4v9fKvg9sKXFF31X3BAHFEbwEvGkDAwGhuFvTFimAE=,tag:6pZMVE5SmmMfHlQFnaBrOA==,type:str]",
+							"password": "ENC[AES256_GCM,data:yjCvvuHMbUonO93W,iv:mCIZmZICaK9vhKq43FeB18SmK4vfsB+j+1pvMixl9N4=,tag:kNr+Amjg8LfEu/btoVgKgA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				}
+			],
+			"networkSwitches": [
+				{
+					"componentId": "switch-005",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:tqtvZ+o=,iv:VJri9vp25NULTtsLvsjbtHomroh6ke79xZ26mQQTBT0=,tag:CURmuKQvm7ih4yfJXeOTyA==,type:str]",
+							"password": "ENC[AES256_GCM,data:uD1iZ7uyyhqW4wjh,iv:doIXt9RQiCCoqSDjpc7/2CdXjtUjLXIdjZ7u1zlY+n0=,tag:VHdfKZjd5Yp56HlXeG+BuA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 42,
+					"rackElevationEnd": 42
+				},
+				{
+					"componentId": "switch-006",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:fNM8DEM=,iv:X26nrkktktQjYp5xIsscNBslHMjmPEI8C39CBGoD1ZU=,tag:PDJPdkUet4beZbBIsMduoA==,type:str]",
+							"password": "ENC[AES256_GCM,data:ke1/i7Wcc/cKLv5t,iv:rBgTrmzZwv0E/uEk+ctqf+TuJgCME8uxrVFuuOxDjZY=,tag:UOVaGvOwP9qvRFuQIdzkyQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 40,
+					"rackElevationEnd": 40
+				},
+				{
+					"componentId": "switch-007",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:xX3E4Ts=,iv:KLPCALwCCd6rgCG8/uWUwOUncPW7E2Srb/0KcH5DK4s=,tag:S+r3ZaUzfUr+9jQTPlZurg==,type:str]",
+							"password": "ENC[AES256_GCM,data:ZTUZAp1hHMO1Yn99,iv:sQdW9eINqoU+6Pvso+ma0+r0FJWd74v1HFYroReponQ=,tag:e6YfZTpy7QNCwt7LQWjgBg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 35,
+					"rackElevationEnd": 35
+				},
+				{
+					"componentId": "switch-008",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:ynrIXw8=,iv:x5kAangaN8A03ycEDNkq3TlEyRaGrLLE4Gc83Zh+Kzg=,tag:cX1cs4PrRLu6uRedWHhv5w==,type:str]",
+							"password": "ENC[AES256_GCM,data:eIczMOLN3h1OJTep,iv:7cCeji4s0GnbUThd8IzlqN+003zDPm1Nbfs91z39fWI=,tag:/6FF6ca+HJ16P5jLGNI+4A==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 33,
+					"rackElevationEnd": 33
+				},
+				{
+					"componentId": "switch-009",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:Wz1c3ZU=,iv:1r+vomPMYIhFG3UBPYPGCzixHerGSQAEkDflo2YnFoQ=,tag:5oK1sr9fGxtRX4GAZo/dTA==,type:str]",
+							"password": "ENC[AES256_GCM,data:n3fHALtAlhxiObYj,iv:EoYsNUlOtgNF72TWVH/nL12lWGdhnqQNacTQn7qe9y0=,tag:D+bKIxMOzHv9MmJ9WO1Zhw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 38,
+					"rackElevationEnd": 38
+				},
+				{
+					"componentId": "switch-010",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:Gu0nLtk=,iv:aL+4fbR/qEXMywGMIoDPskyQtvkjIG5sUFT9vQILG34=,tag:5YNAqnHV1LdJCtSpPQjPrQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:RkNZsuvyAbnapniV,iv:p9PWM82I11FJhJV91bZWYskq7MmD2wQIZ2PZTGQhLA0=,tag:Vbehf9FRbMf1nB1/qscuwg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 37,
+					"rackElevationEnd": 37
+				},
+				{
+					"componentId": "switch-011",
+					"type": "HPE Aruba 8360",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:VR/6omg=,iv:1Ixr25iPRv1w33eHVvut3Nu+mSYcsasWLtVt5aWlTUc=,tag:9/2ffxDEw6MuZDEXC5Rz2g==,type:str]",
+							"password": "ENC[AES256_GCM,data:UBEkVPknzjYvfJ1G,iv:8PFT4W9tOzGKQvPjGwBcAj3OHjVxbMJG4yJkbm8nAPg=,tag:axtfQKuBovJ6BGK5zSNF2w==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 31,
+					"rackElevationEnd": 31
+				},
+				{
+					"componentId": "switch-012",
+					"type": "HPE Aruba 8360",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:fPcZyPI=,iv:oHpk647mWcbFge8zgq+U56YOldKIhsQx5x/wjg/1MC0=,tag:CvLBoDhA77tj8azTYMS1Ug==,type:str]",
+							"password": "ENC[AES256_GCM,data:E9A/6F6IXhg/bgFj,iv:HXoOji8DXDojWG4yRDJFaHi/2XlUUdiD0COhSowlBQs=,tag:gLiXX3lB2A/HtO1H8P3kBQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 30,
+					"rackElevationEnd": 30
+				}
+			],
+			"servers": [
+				{
+					"componentId": "server-011",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:+9Sr0lTVMZAv3ZfpDw==,iv:a+GO0wwyqeEQvsJ32gj4sULJSjLZDFghzFcUl8UIzH0=,tag:qhYV27taNd4nyT7SawSizg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:+AUY8a0t4wuKr3AFGQ==,iv:ZNoBNeoGD5wyTxbH6BJd1s3apx7HTPyx/hiU1ZCt83I=,tag:4amXcy7H0VfSG5h+2L8yew==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 1,
+					"rackElevationEnd": 1
+				},
+				{
+					"componentId": "server-012",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:sJnOPF4sdPlhg/Sv9Q==,iv:EN51IzC5V0Toi6EksKiCWzlVhtrrdg3sOMXNBG4KEec=,tag:m/tE42aAcC3n6kCn4kNMYA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:ZRo12ec+abW4PkkqKQ==,iv:v+OvDfSZ29xmTQmrDITkqCRKtSKXFFCObtzG5jevY0s=,tag:zKlDOy2fb6AmyKVY5J7pUA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 2,
+					"rackElevationEnd": 2
+				},
+				{
+					"componentId": "server-013",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:ng/fMIlZd8ra7fEbWA==,iv:emzawl4RWmHTCjbF1IupYmyBe7JEKdFumfYUu/E+zc0=,tag:jWdYrBpstKco8fsGh84nvQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:xD+F7ND0E8RyxGcBGw==,iv:hajNaodq6pRCg6f4UtNjcM8yKrUuM0m8J9xDOL/MPnk=,tag:3lNzoTSDHXzNqyt4WPF00g==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 3,
+					"rackElevationEnd": 3
+				},
+				{
+					"componentId": "server-014",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:wAQaoOTARVTk30kL/Q==,iv:X6I+kpQjW7a9l1aclkWAuKPsh+/Eq7k74iNpw5MWZYs=,tag:Wh1XBxMz9xql4aH3L6XHXw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:IepgCsYkaMJmK4YBIw==,iv:0CmMWxpgtQOxM21Zq5XqRLJSiMbB5hRcxYW/DAOWgZQ=,tag:D2dI0VjrBxXQwOW9k8oHYQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 4,
+					"rackElevationEnd": 4
+				},
+				{
+					"componentId": "server-015",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:yLzncISSIvRO4qy0SA==,iv:N/NHOsQRsLhQSvNQ1CZFS+u/+1H/Kf5WFK3ad+ojIZ0=,tag:uSYxp+tRDGiKmOfZH2dLSQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:Fw5VFffCz17Hhlbqdg==,iv:28VT28Jq1ogVYErQxnEAC/siUBp2hFlzjOtDwNJCDSA=,tag:IjZlkpWiT2ep6MNko9ue4A==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 5,
+					"rackElevationEnd": 5
+				}
+			],
+			"updatable": true,
+			"deletable": false,
+			"storageArrays": [
+				{
+					"componentId": "stor-002",
+					"type": "HPE Alletra 6070",
+					"maxProtectedCapacityTB": 184,
+					"accessCredentials": [
+						{
+							"target": "STORAGE_ARRAY",
+							"userName": "ENC[AES256_GCM,data:jYnwbcY=,iv:FXiytptns5vce53UNPPsOSF14NISdSVvM0tBVX18Lkg=,tag:2OwYnVLgSVSLDlwJk5wqlg==,type:str]",
+							"password": "ENC[AES256_GCM,data:yEvwzfxcqXFo96qK,iv:kAqFPMD2k8fcdwNe+NOEowZwfWtCO7bfH3dqgov/V38=,tag:Bs0r/ZhYJ6QIgCOvUvvJhg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationEnd": 28,
+					"rackElevationStart": 25
+				}
+			]
+		},
+		{
+			"componentId": "rack-003",
+			"pdus": [
+				{
+					"componentId": "pdu-005",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:ZFczfaA=,iv:auVXvuWITN9OjDXAs6Ti6tNjq3INv2sRLivaPHvfLGQ=,tag:dwQqjF5GSO6FS2dwaiO/eA==,type:str]",
+							"password": "ENC[AES256_GCM,data:DYOhHRtXxJ/eOj4x,iv:ouyZ4WTMo2aBOjHxsOh5fwy0AFMZ2sBTReqr6sMPNYU=,tag:/nSjVtilppn8FxDEidO2hQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				},
+				{
+					"componentId": "pdu-006",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:kUPr5/c=,iv:y0y5VSXuB1epLVE67fF6yNnjozwAgAZiuViYnLgO0kw=,tag:VqPuDc187EhYXxpeLe0NUw==,type:str]",
+							"password": "ENC[AES256_GCM,data:uyjx9a2q2ML/mbd0,iv:3KK1/NSWctgJ7tiwmZcxmB+de7DL2ob/roM+Y8qccvE=,tag:JBGzeOfA8e4qLk2VRk1gTw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				}
+			],
+			"networkSwitches": [
+				{
+					"componentId": "switch-013",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:1oUXpxU=,iv:C6z+4nK6mqowUOfnrb82ZNmFI/1bodE5EwnobID+nZE=,tag:1+KWbzPJuvEqZvWGbR8q2g==,type:str]",
+							"password": "ENC[AES256_GCM,data:m/KqYauMRLMUSOvl,iv:sAwV+suJWatIbUlQGmh/m32LFQw4p0Wp8psrwkWy8kE=,tag:UiysQAoMIAra5CICO88HJA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 42,
+					"rackElevationEnd": 42
+				},
+				{
+					"componentId": "switch-014",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:G5iqfyE=,iv:HE0jR7yGfMf7xDQy5gRxOiYtWREGWM/eTfi+txNhfb8=,tag:s8Q1NCr32Uj05DJCDQoWow==,type:str]",
+							"password": "ENC[AES256_GCM,data:hRVy/bPrxx8TgUDP,iv:FiKrg5ytouw3Ok2I5+SqKa6uAEag/ixSjTn6L2Y5DQY=,tag:GxofnC/53DaPTr6o+9aX6w==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 40,
+					"rackElevationEnd": 40
+				},
+				{
+					"componentId": "switch-015",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:Bl/4K1E=,iv:Oc0UrVVT3QaMatUClucprOJi9LcD4fCg04z9fHenSt0=,tag:4k1YpTprOlSp8CYdjDbT+A==,type:str]",
+							"password": "ENC[AES256_GCM,data:/R5K+bLUaIXPRbgV,iv:XVHCFwzHTmbkIdC+du8eWPadBADD8O6hJB2v6lkJ1jM=,tag:w/dbFqQ9NSYUZbgnTUjrBw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 38,
+					"rackElevationEnd": 38
+				},
+				{
+					"componentId": "switch-016",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:tRHVIJU=,iv:sDfbPXgX/uxEwx+Pj/c31uwZwfGOmi68nM+6skOzn6c=,tag:HaMukc3r3NschGQvBwBBLQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:madC02xA7EJhZHNz,iv:gZIAfqaGWw1kDD7gTO8IusSpzC+hBrZ7VzsT4ozEvGg=,tag:wiMQgh3IzNjUGLighc57Ag==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 37,
+					"rackElevationEnd": 37
+				}
+			],
+			"servers": [
+				{
+					"componentId": "server-016",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:7lQ+NMJj4eEFGpGYZw==,iv:zseWNmuWw07YKUc401EWpZ8xDR+xaNOdK5x9Z05U1ic=,tag:KBG3Yeu+80DNCjkkRzBL5A==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:0mBxRoXbFrbj+yTOnA==,iv:F42b9ERNVnd08DP/LejWlhO/Sf4NXJCAbe+dvi5jvhY=,tag:HtUN7rNgL2q9+CyvVa+mtQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 1,
+					"rackElevationEnd": 1
+				},
+				{
+					"componentId": "server-017",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:hCimAEavu6PhCTdnRQ==,iv:9OPQRZFUJZTwTac4xg0xWnuMQsFZTugWC9vQZ9N9+0c=,tag:pBHhparFZWefj+a9b9Xs7Q==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:DvujxfS6tGFQno2xxQ==,iv:ewgEJJ/kGurAfMAMzdbjp9z6aaY+Stp+uMKxLirLBtY=,tag:ik/8CpzRnhuAxDmSk0jfhw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 2,
+					"rackElevationEnd": 2
+				},
+				{
+					"componentId": "server-018",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:knivnQJdL27OezGnTA==,iv:5vXBN0bUHUtzm5/PofWfxr3MvjAaXhcrowMxoik9skg=,tag:FllavLKlkwFoddwmbkdSzw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:hGQQAg3JQKseuXbJIw==,iv:lrGEJp9wa3bfJhgoPKon5dmJXNcxvh02VIHkppgVy0g=,tag:gBgB16p+2/wCgDZU8yL3/w==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 3,
+					"rackElevationEnd": 3
+				},
+				{
+					"componentId": "server-019",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:drHoad2mAltZKA9gxA==,iv:uwlnkODfhKlzq0SW0cZYJ7A6gNVehcgxHy7OgiFS9F0=,tag:KFIFim2uDOxgETDuC9gj4g==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:Cw3RQrRr0a6t17ibaw==,iv:5TZw79MRqH1JEStaMyT6nh6hsPz4ieaxvg05jAAb21Y=,tag:k4rmbmRoWnq7El7crZgH0g==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 4,
+					"rackElevationEnd": 4
+				},
+				{
+					"componentId": "server-020",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:+Eim4X0HJ6yqgyoweg==,iv:Ft0nQkohz8KDJV+RcXzHU0WWn1p4YhTGZ7nZKpmwjCU=,tag:ztEOiy4/n0vAgLCdNMDrcA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:jsirrL1saNcElnm2+g==,iv:oW9xNxrFvh5vuLgxiUcPtYL9C8GEN0S8pdOL0o3QrIc=,tag:DBKJoPgAc2skreoj094Ugg==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 5,
+					"rackElevationEnd": 5
+				},
+				{
+					"componentId": "server-021",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:PxlyJpekZW+xweTHIA==,iv:pBXS8PPHH2xifmC7wljp01691BeJVmDUS4GczPhI0W4=,tag:PsrzVOyZVmeGqePNqoUqnw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:a2SWaFWpRAt+YAakwQ==,iv:df13tXhNW1wjiB5bOkCG/cpyH2o7WGffedHsew2rlZw=,tag:VlBlts2y3iRqM/7B+doAKQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 6,
+					"rackElevationEnd": 6
+				},
+				{
+					"componentId": "server-022",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:qDel3zSkhh9tN4TRcA==,iv:qzor3ULK24vDTfjKqZB59OfIu4HJJot4p+6wLY1alt8=,tag:8TscN3dyYBnciYntnQavfQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:bP7mAUBFsmaLLxhNfA==,iv:N3DJP+GDW2rOF0WCR8hSeLUi+De35JX74SlfXfIjZBs=,tag:+JF5xJuKzr52KekHgfSoWQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 7,
+					"rackElevationEnd": 7
+				},
+				{
+					"componentId": "server-023",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:XFc4DEABYkDMY/xVFg==,iv:ZHZFTKnP9+qz8Tw8ILAskdIIUYLH4B7m85oDuQ3ABfA=,tag:cduIoGvDExM1Cj9FVGohKA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:Sgdvur0ZJLl1EFk5PA==,iv:Q/+aEfzUr/Qhr+o+6YmREkXTLarDOk/fa9tyrmmryxo=,tag:QAWwqbyShJeMfdFld9UbZA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 8,
+					"rackElevationEnd": 8
+				},
+				{
+					"componentId": "server-024",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:irl69nevwWqbkwHrVg==,iv:LrJx7obcftfvS3J5qSfnT2w8dMhrypp1T1czF3q+JLg=,tag:+Bp3xeQtsCyFPi+u2XR09Q==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:MQVZDVl95KdzAXgteQ==,iv:PgPwqik1NGupTI6letudBNBSTdmxQ22OS7Aa8VlO29E=,tag:Zujq4NlYz4/ehFx2+vh3Pw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 9,
+					"rackElevationEnd": 9
+				}
+			],
+			"updatable": true,
+			"deletable": false
+		},
+		{
+			"componentId": "rack-004",
+			"pdus": [
+				{
+					"componentId": "pdu-007",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:GK8evLI=,iv:sEw9VLwiPvY0Ke8MFeqqmqMfTytdYKVjrGSU7d7Apkw=,tag:NSbTT1N1wpK5C6zdDuXGkQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:cNCACRWdtgHiep5R,iv:a50DR239b2xT/j4nHBrKGOcpaBQwMzxYLY9OCQ/At3c=,tag:VBlDCZATQmq8lB6sDk/4Rg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				},
+				{
+					"componentId": "pdu-008",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:jYha76k=,iv:+NaA9FvqF1z7UsYnxGEAuch1HWS0EXSnt/S5dqrpw5w=,tag:20Uw3wJKQpProbKIz6ZSiQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:ELp/MUI1zJS6yDz2,iv:LOVMm12exbLShEUIKbam1Urztd8drnQi7vBYxPJErJI=,tag:7HBaCF2BryYAGKK1JvcX6g==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				}
+			],
+			"networkSwitches": [
+				{
+					"componentId": "switch-017",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:BiMMPJY=,iv:lVKvgkyU1+Unl5acJkd7QUg0gTSJ9zS97pbUG7WSaUY=,tag:kDkGjmFx7jHudGDh/5wZaw==,type:str]",
+							"password": "ENC[AES256_GCM,data:LjBS7JDNT0nhJRA1,iv:Qy2UKo4eHr4zURCacY21go9ZzshNyNaNkqQ3UDIUttM=,tag:VWV0NShY+OunUfnKR0H1yA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 42,
+					"rackElevationEnd": 42
+				},
+				{
+					"componentId": "switch-018",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:NRWLJaY=,iv:0qOCA+wSCjWnF0X/Y4BVksqSrig7UcAjsKuLgMvWyxc=,tag:hs+Nr2r2xFk490PlPBze0A==,type:str]",
+							"password": "ENC[AES256_GCM,data:/yYtQUPTa/mliE9H,iv:HR1VX/LdkIBFpwPyIbZ6osy2lZenxSF/HhEisPRwfcw=,tag:M+/OB++jbp/2pTxxgkqu/A==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 40,
+					"rackElevationEnd": 40
+				},
+				{
+					"componentId": "switch-019",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:Pwwnm8Y=,iv:TaN8fV7fjxc2otpAu6HfvlxVRxqub4S8ZBiBMQj8mdU=,tag:qpLcWyVSuBysxdkRuAlLsg==,type:str]",
+							"password": "ENC[AES256_GCM,data:HybCix++n6uitS7e,iv:FYgsnw6Yrg3517qCowCMYnk0KjdZXXq2kRq/voWY+bw=,tag:NygKE2GO49590ievkWo6dg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 38,
+					"rackElevationEnd": 38
+				},
+				{
+					"componentId": "switch-020",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:JtnEiiw=,iv:6I53r4CcGljB3MYJt8qLXktT3gyWCNFGYYuWz0TTotY=,tag:dICzDjAr/CJqohlA5pvMfw==,type:str]",
+							"password": "ENC[AES256_GCM,data:sKwn3Fg4SwcoUELD,iv:It978taXlxxHWb/dpQ2l22ey/vY+cSH1bMV+EERcqSo=,tag:wkQPklgckpKHIKGKCR/+4g==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 37,
+					"rackElevationEnd": 37
+				}
+			],
+			"servers": [
+				{
+					"componentId": "server-025",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:XOWs1hzQePV51L6unA==,iv:9uVGnV4O0XBFGWJiggAtIz4YgY9pD8rLE0n7nT+pO/w=,tag:MK9eIVCsvjwtrcOp/VxvBQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:GbMOxPSSsw6YPGVv0Q==,iv:CuxrQvmDhN90in+ubpE7draiGFQY2VoBI2pWQ0IzTVg=,tag:HZQxM8sHH8dkZHUvH90lqw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 1,
+					"rackElevationEnd": 1
+				},
+				{
+					"componentId": "server-026",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:SMKRXWaV7DL9IG9rVA==,iv:rgeAVCu8sUUOvS9bUKsoEQqBcos4b5S9HXxwFFmgDx4=,tag:cNmp/C5Gxxlzc4OiZ7KItA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:PEA8PvDy7eJtztalSQ==,iv:G2XjHi8qshHz/tBDDTABD0LVNXMA6tdOzoo8Gdm9Uxc=,tag:0+aWH2VgZ7BOqe9FBlR8eg==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 2,
+					"rackElevationEnd": 2
+				},
+				{
+					"componentId": "server-027",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:KyNv0zhtTYzHPMjbWw==,iv:jvSgYmLZebp0R37wNGYIP8RMyrDwDyIE2iWg5zepvJc=,tag:xat4C2GIRMhTCBUmZnDPng==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:AQk79py7j4l4t01MXw==,iv:wd+d5QSVWJS31uEXVHdireTtVTFxmE1e0YI9JpRImnA=,tag:h+PuAtypAagzwfcN+AoNAw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 3,
+					"rackElevationEnd": 3
+				},
+				{
+					"componentId": "server-028",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:A/0yLcuGuJ7J3f3QKQ==,iv:bPdldu4DBVodyNv0bDYhCIxHaP3KKvILVI9cLiMtfqw=,tag:CLwr70I4WQwloM0jQoG7RQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:ugeSBwAFwfl/ExmBMA==,iv:+0tcWSyUpO/INAwaiw793PG0SKp8SabC0oBKemL0NIE=,tag:LObaUyCEQbuOBKX4460haA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 4,
+					"rackElevationEnd": 4
+				},
+				{
+					"componentId": "server-029",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:Fsz2QgtPtdpgfzG+8Q==,iv:DloWsTPwXwRl6brlzCzKIN74n+ZCkvjm6oz9mcAvppA=,tag:zmZBwnatzNYL5HT8C9hnRw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:4UCf5kF5tdJnXURsFw==,iv:Y0TD2EyeBeZRJ2PI7y3NUL57BijiLfPq9kpJMNKVaNU=,tag:qx9YCfKsj/d0QjtYSwaVGA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 5,
+					"rackElevationEnd": 5
+				},
+				{
+					"componentId": "server-030",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:Ndr4KwZca5bZO0Aj4g==,iv:TQ48mPL8RNnfNGjxf8o6mzQCgtp8nrYyfxe1Qzs6S8k=,tag:kpgSemYCQbRcS+62Ro/cUA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:8XAHbomBOCSqrR2ALA==,iv:pBps25icu9NcwZuLC4TpuQ/x2vQ3HzNiu5Z+P+tZwgk=,tag:WDsxNhVtgxVQu7GiEOlhqw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 6,
+					"rackElevationEnd": 6
+				},
+				{
+					"componentId": "server-031",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:siGpAlmid4g0hY2cKA==,iv:bVmE0h7qikLCUN/+1a9t8/jxu/9DW9M1Lm53SMcD2cw=,tag:v8LhXsKffUZItcOZPWevcw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:RUXEjDbURaBWuALhfw==,iv:yipjRMoLozrsC3PnPONmITcKsteR4+rob+ARcnBEa9U=,tag:pSvSk7brS1wROKjrvGStrA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 7,
+					"rackElevationEnd": 7
+				},
+				{
+					"componentId": "server-032",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:OKNlBQlKJtfZnfVjnA==,iv:aZSHfUVWIBqEtzHwWgzod1bZbcnFT+NMEsIahBkNrx0=,tag:GuuSpj2tV8LABC/hMMPnPA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:AaPm1ak08SfoLL/k8g==,iv:FxC+YSkMgsmJOVaQAbcl1vm4vQmUbQzFqRCgVkGq2Qg=,tag:7YIziLuh0c5bpP3LvOVsXA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 8,
+					"rackElevationEnd": 8
+				},
+				{
+					"componentId": "server-033",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:HiIj+ZmcO4E74Z1YQA==,iv:85Pt0pInnWWaKIsd6e1Q0AWErPB3UcdtL8G09ihFi1o=,tag:fuREMiheE0ec/0Lp4XTzvg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:++m7Epv4PPAXuI1LNw==,iv:lzs4rOUmxQcvGvMUAy7HWEfq0a1vAie6qWPuj4oXwDM=,tag:5xSrREVdG/Xp9/t0QL9hZQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 9,
+					"rackElevationEnd": 9
+				},
+				{
+					"componentId": "server-034",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:EzVk9kizdMF9F2bUEw==,iv:g1g3yKjn13qKHT6I8sJ/pJvw4tYn6odXPRVAmvIFDWI=,tag:Lr4yprL5rUktmscrooe2Tw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:lN9Wud/AaMKYFpRZJA==,iv:f4WFCdBXbKaZ4xM+GpVoBc/S6y5YV9A+Wnxg10YfPkg=,tag:7qfnlD78hvFGuglEIdvMxw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 10,
+					"rackElevationEnd": 10
+				},
+				{
+					"componentId": "server-035",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:xFcUZrDmkqcpIy4eHg==,iv:mch/svJSWhyHYk8Tc/VhAwK5XBf/C1J3GUWFNi3pJro=,tag:eRoXCMv+IocA+0gFD+VoRQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:CXWW1liQEwCdzz367w==,iv:dYUudPdjAlWinKkruxpEX01z4Xf7/jEb0HeTNa3BgMk=,tag:k9zvoFfTyTZ5Qv0Tm0260A==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 11,
+					"rackElevationEnd": 11
+				},
+				{
+					"componentId": "server-036",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:KNYvYPYdqGlfPf3iYw==,iv:gGkFNCL54wkyEnm5ReZQqL6fxPB1C0v58Xn8hGNpIGo=,tag:b/F3H9cNuruHcGT4kx+Cdg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:Y0cQRelatZl3FFSEMA==,iv:ny/ROkzJZyqyqAx5dlm6tJ41FfgpWEfWji1n0JTzdcE=,tag:wJ90kUNcF8JoXe+TpFBx4A==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 12,
+					"rackElevationEnd": 12
+				}
+			],
+			"updatable": true,
+			"deletable": false
+		},
+		{
+			"componentId": "rack-005",
+			"pdus": [
+				{
+					"componentId": "pdu-009",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:VoHpP10=,iv:dehT9zSu2h0yKB2GgeMz4c569erCYZSV3kBSDl76T5k=,tag:dvHnqIwzep+79cYMmWTfHg==,type:str]",
+							"password": "ENC[AES256_GCM,data:lFpCvGgFaM9g+J3H,iv:JXMH6t0cPNKTX9i2HR5brLLetbg76F8zkgwifozyCDw=,tag:2+k2yITQlGdoWu8UEFzeLg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				},
+				{
+					"componentId": "pdu-010",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:dc3+D14=,iv:efW2sith8Y+k0vEivY99NTkUBNtghvBZ/9b+LGAo/Ss=,tag:5/imP/JEv6OwrBUz5WBTTw==,type:str]",
+							"password": "ENC[AES256_GCM,data:6YlWr5HFKf3RAWHb,iv:y6/CVe5d8ZJ+QK1u2kvisg87EHzg4uUDHhMx/VRg6ms=,tag:o1tTuCEs0v0lpmFFpSLK2w==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				}
+			],
+			"networkSwitches": [
+				{
+					"componentId": "switch-021",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:K4TTJNs=,iv:lOJ3P7lrS7UeGeXyXeXNgp2u6xpfv35G1sg2m1L+0OM=,tag:QTbngyQnQPedEhSoUlrLpQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:EOhkUDNTOQ0gNH7i,iv:x8tAin9qSlhfsh4yrxIV7U991dOfIPY4zevefnn8wg0=,tag:36dyuKjfBoFnBzTvHc2HKg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 42,
+					"rackElevationEnd": 42
+				},
+				{
+					"componentId": "switch-022",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:QgMxRwY=,iv:QfI55zZdowv+GT9nCB5GJvqZ3EOf2iC5f1PpdaDU+vQ=,tag:dZ1iJkwQGl2I+ys18I05Hw==,type:str]",
+							"password": "ENC[AES256_GCM,data:8BL+k1yhQjbpeJ5x,iv:sXX1DlPGmLsCehNaIsM9agj+Glbm9Hec/+RBVFP63MA=,tag:+z3ZfOIVuEEstaLfd8UuCQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 40,
+					"rackElevationEnd": 40
+				},
+				{
+					"componentId": "switch-023",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:fZ9ZIRM=,iv:4T2H2GctL1IdnZHTKZuVcLIBqwJrQWLQp0ZJTiyq7Bk=,tag:b7Q/QYR2zdInFXTGcXBxTQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:iHr2E1QwQf48rbci,iv:ZpEWAWcrs1LznS2tHl0LFu9+2gqxFGpNqn8louYUZsI=,tag:3y2G4DrEXvDQ+p/Y0hUBnw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 38,
+					"rackElevationEnd": 38
+				},
+				{
+					"componentId": "switch-024",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:2zmvMAk=,iv:ZU/IWXVhG7R8hqrADHbddad/76xQr90WU/HS1G60Tsc=,tag:5ZGKgLd1Zqprpz9IkxRoGw==,type:str]",
+							"password": "ENC[AES256_GCM,data:LRikH8u6qNXKn8PE,iv:kp4a2u+bpfqalili3liFbp0BxHCoXTl9wU1RAzld1sc=,tag:5lZYPrWjpwwu4vwGIxWY8w==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 37,
+					"rackElevationEnd": 37
+				}
+			],
+			"servers": [
+				{
+					"componentId": "server-037",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:X5Q+8CNbV3Oncu71IA==,iv:ReuQ8V8DJKWzxAhS/TPy/U+9EVUpTqQKtJzFmrCiKd8=,tag:a0vL4yuZ9asFX5echTu/Sg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:vAEz7fawEaJo32OEHg==,iv:LUDN4bv4EyvYcf+HUKMXu4m4fj0veMi726IzxPaz22g=,tag:/D8YnVc2+3Idcp3/ITav2g==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 1,
+					"rackElevationEnd": 1
+				},
+				{
+					"componentId": "server-038",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:3Aa3wEkBfXRAa/+RSA==,iv:f1u7XTJKOgXs4tqMWlDh1yhEZekjiDJ7GorDJ/WxnnM=,tag:KFIwvFVOGbQ/uC6m1TP77Q==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:d0NuiJgUVqB73r+I1w==,iv:9MVJAco575I9gTSYAj6z4GbHLgyoq1kdVz+rvDUgE3M=,tag:hbhMaWFOC1PDmJPx01XYfw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 2,
+					"rackElevationEnd": 2
+				},
+				{
+					"componentId": "server-039",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:UoYDEvha5krCneNXyg==,iv:MqLQDtZyFp7efGpBYJmxVuV10mYqlhB/eKYAckDvqHI=,tag:sLpw2Yq1wF4n2CdMQAmENw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:eIKMwoLRUbM/JZ889Q==,iv:GgBzmz+Ptt4C8LpJ9QdCnDxbiKGAWf1EmvgeiRoQxTo=,tag:RWPP8QZp24UKyyVqKLoSmQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 3,
+					"rackElevationEnd": 3
+				},
+				{
+					"componentId": "server-040",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:f8f02RLSHDJuCF0D/A==,iv:eEd1g7A3fXcuV0djFOAvVGGx74XIgJMNQcT/McCrJjw=,tag:oJpM3RD6eSYVSyw/EIaWtA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:VbQnPnaBpg6XWETDFw==,iv:Ti9yNZLjC9nE+asIbLoKus/ruEXgsv6Q7W0SGxNWEAE=,tag:LtqyWBKvrjzDjoU3lkSiLg==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 4,
+					"rackElevationEnd": 4
+				},
+				{
+					"componentId": "server-041",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:BYlumTXRlADNc3U+MQ==,iv:ZkZW+2tYMV0Dbmy2w92jknUPwEoxrWh6U8L0wAefsP4=,tag:vPizn1AOkMtNCSp80LUpMA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:luzce2+G18vg7lMWeg==,iv:pSz+CtRerp7KSXzfo8+XIrk7r2IA7rLClx7lmFfLrjQ=,tag:2b4NcTDJp29yiaBA2/lh0A==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 5,
+					"rackElevationEnd": 5
+				},
+				{
+					"componentId": "server-042",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:VA8ya0/mQOjoAgslPA==,iv:7MY6SispC0wEp8KSftiZiZAwmVWFZkxxsnu7zZLkALI=,tag:iqgeg6gi6sn1vcZI3tInpw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:s90mYTixyHepzvFGMQ==,iv:jPRjDLwy5qbQz+tC9KOgkDSUX2OzMVAgWp85BtRabtc=,tag:PYHVVMOTxcq17EzatiKx9w==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 6,
+					"rackElevationEnd": 6
+				},
+				{
+					"componentId": "server-043",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:y9qt0n5dNuNAx5qCVA==,iv:LfZBdl4E4ONErujKEiqbjeMUC709FWPs377zYP+hods=,tag:pbB5y6RaWJOwOk9/skrm4g==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:aBp6m6RczcNAPs93FQ==,iv:fWcS10FJLzdCK9z2FqXvBVPRcAQ1tstKk67ICzhIkTo=,tag:kb089mv2KHdP1Wz0mEwEqA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 7,
+					"rackElevationEnd": 7
+				},
+				{
+					"componentId": "server-044",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:bOklgRId7MV4ZUbDkA==,iv:mbbWfxX3wYlKGDEP3GJOxsl7p5XicmUPzDmYo4I2EqQ=,tag:4eJTS7nM05j1MTELjwOPVQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:sMkrr0xrJ01YuQsgWA==,iv:AhtaTqsgMimIR89ArkLcoEbzDtzhBlkvjCi3ptwTE7M=,tag:vR6/Wg8K+ja9InRyDxkF2w==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NS128.1024.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 8,
+					"rackElevationEnd": 8
+				}
+			],
+			"updatable": true,
+			"deletable": false
+		},
+		{
+			"componentId": "rack-006",
+			"pdus": [
+				{
+					"componentId": "pdu-011",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:Xi53Q3U=,iv:F1qexQauMY5FUx1vbtniJsVasBNd6Te4Qh5QvZPS/iw=,tag:9Y1nfCef03sFAvwd1q7cfg==,type:str]",
+							"password": "ENC[AES256_GCM,data:3PJt0kX2V4vW5ubp,iv:jhc3iAqlqJdNtuHP/qp0i/qvlj8eICApyxishN2FJz0=,tag:E1BCiRaKdwSWDLOZZ3t28A==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				},
+				{
+					"componentId": "pdu-012",
+					"type": "P9S19A",
+					"accessCredentials": [
+						{
+							"target": "PDU",
+							"userName": "ENC[AES256_GCM,data:Bwq6+x4=,iv:NDkkjpDnPkB9lU5TMC8GV4AWdiW8FJ8Vxcy5s/ZvhGU=,tag:sJRK6V68A1VCNrWT3Tkzcg==,type:str]",
+							"password": "ENC[AES256_GCM,data:ov+5SgXgdhqExtSS,iv:4AqlePiHGtqanDDiXX+JtlfBsELijgm4aOzE+Kk6sDo=,tag:W1kgKBEKjODHRDt+TXiq5w==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials"
+					],
+					"deletable": false
+				}
+			],
+			"networkSwitches": [
+				{
+					"componentId": "switch-025",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:yU5WD9s=,iv:vObdcWB4I0gc2MlgdSAlH5y4+phzCQP3v5m4L7EQrzY=,tag:5eka9j15aHgDUbs+x/lsOQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:ybTFWkSXgdWmNvkW,iv:EknnJ+1zJdxozQOh8FgmOzAI55Ai41t4amntGiQRJYM=,tag:2ArrIda3YCavqJ9bHN1yyQ==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 42,
+					"rackElevationEnd": 42
+				},
+				{
+					"componentId": "switch-026",
+					"type": "HPE Aruba 8325",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:7qnFJxM=,iv:or3zGBbogMZph6bVwgiqnoV2bbXv3Bxf3kTFnFAsy3E=,tag:KHI5HvnaGVVFsRMrSwwU7g==,type:str]",
+							"password": "ENC[AES256_GCM,data:tHJ0w8cgsFLoMb/q,iv:ZSBCntjoexk0fmCQd5XJ2RupQPx/jAgUBGbwTtwb0Ho=,tag:gwDoh7fWkceHbA8l83hRew==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 40,
+					"rackElevationEnd": 40
+				},
+				{
+					"componentId": "switch-027",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:+0sEMeY=,iv:ikRc9LigIWNe0K5DKeDNtr6eTIunxNN9LnXoGJh8Kl4=,tag:lUHHBi7fjIz67kXaU7PUaA==,type:str]",
+							"password": "ENC[AES256_GCM,data:3lhLuKPzbPGwjmK+,iv:FG1gXcFcLA22ehlaMv8jnXCFnwH6HFXc+KzOUTsGhYQ=,tag:lKBJvm1MQ4nU3k9easWtWg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 38,
+					"rackElevationEnd": 38
+				},
+				{
+					"componentId": "switch-028",
+					"type": "HPE Aruba 6300M",
+					"accessCredentials": [
+						{
+							"target": "NETWORK_SWITCH",
+							"userName": "ENC[AES256_GCM,data:cLqJewo=,iv:piGq6uj1EW+oCypHoaAHkJ/HbohZxB031XC4mb2w2jg=,tag:WYCw0KDTF88n6ulxVI8gNQ==,type:str]",
+							"password": "ENC[AES256_GCM,data:YACB2cI1jaFFaotV,iv:rkykEyNhLwv+KclMeUOj147E6/R0iT6qYqA9zVj2RuI=,tag:c1QUZ03ANch8k78tYAJULw==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false
+						}
+					],
+					"updatable": [
+						"accessCredentials",
+						"rackElevationStart",
+						"rackElevationEnd"
+					],
+					"deletable": false,
+					"rackElevationStart": 37,
+					"rackElevationEnd": 37
+				}
+			],
+			"servers": [
+				{
+					"componentId": "server-045",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:15i3GCNNwPkKGJCGJA==,iv:PjmaLPRScfZ1JrtDUeP9kmze47/kIl2QXynaoWhFgCc=,tag:/dqTBAWldc9h8B1j7G1XLg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:uPZB1dDxPmwSODSEig==,iv:Ofk3y1F3e/FEhPXEykaYUv8xFhl1rfdDtAKxAmaD0tM=,tag:B6DLioW4jgWGCNucp/WtBw==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 1,
+					"rackElevationEnd": 1
+				},
+				{
+					"componentId": "server-046",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:CHrHbKEYz9kCUEXkEg==,iv:R/Ou3r2LPJVtryXYGKWBab4dbjyf1q+Lutmjgx2k6ro=,tag:1ws1iEfWiAZbyv+Cs/fqWg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:euie46xoyzCqM4S4DA==,iv:4xK0Z1JBL0gHmr08OBot3pfYsrOGoUX3kT5cFhWblo0=,tag:ujBHaHzNVr2eX+seiypr1A==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 2,
+					"rackElevationEnd": 2
+				},
+				{
+					"componentId": "server-047",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:dTLjvV/c24RHjp27bg==,iv:jMidImuxQEYjrCwqf2slcPqqJ6t2aLOUPn6frzysEa8=,tag:gWgJpQeMTE/PsPN0kHOeRg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:4TEQxVjhwcCjlb/nCw==,iv:45wfyjgrqmiLb+ScTV+6oIpFt79lXn2+x7RRCJhjVnw=,tag:v3IzerJV6NrdbSMRI8UdCQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 3,
+					"rackElevationEnd": 3
+				},
+				{
+					"componentId": "server-048",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:R1uw7/oN8x0Y2fjkRg==,iv:0FgZNTdVY+t30O8EeaH6WKUS8+oybyXSdseUG8zNIEg=,tag:IhNZuTclObkhiNoCTMy46g==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:7SJRJUZ1EtoyqkPhRg==,iv:ccHdcOCGVcqQySYs5Nf1idBtOYObVzMQ0D3r+IT+Uwg=,tag:AbfwbGpw7AUArtgToofxNA==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 4,
+					"rackElevationEnd": 4
+				},
+				{
+					"componentId": "server-049",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:z2NwiESVLVDTica/Ag==,iv:BpjZ1/PcofzXQgAUOMptyIxmSCHusHQsArjMlsmVR00=,tag:lpaHDBHLABiYyE6PoXD5LA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:1UfBhdTKDKDOXmUdTQ==,iv:2Eg1nlu0P+Cue+U/0DVzbJVe5QgCquTYNConwKuNjCg=,tag:FQtMVsBq7lSeSqDzjRrCwQ==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 5,
+					"rackElevationEnd": 5
+				},
+				{
+					"componentId": "server-050",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:LVupYxacSe1MCOCxzA==,iv:A89YD4lXDZ1kRwxe4aTQcOmLx4hvVxg1v0K3n3f/OR8=,tag:V9QEhzDAMTYuPnakooy+sg==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:Qq6oaUUEdP1qs322aA==,iv:VKaqpbIYT2jfozknvuAbJyTQjdpNILLBrI8aeRPLKpk=,tag:Bze1ab4gBr9/Pp7PeoiG3A==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 6,
+					"rackElevationEnd": 6
+				},
+				{
+					"componentId": "server-051",
+					"type": "DL360",
+					"accessCredentials": [
+						{
+							"target": "ILO_FACTORY_DEFAULT",
+							"userName": "ENC[AES256_GCM,data:+Qefg6IYQBfMAcwI8A==,iv:dlrL21Q+LRKD9/5Dg3MYs4PKLnuNokwGHbCIsnVQZGg=,tag:Rn7liibY3Vqu2rGJrW1ejA==,type:str]",
+							"updatable": [
+								"password"
+							],
+							"deletable": false,
+							"password": "ENC[AES256_GCM,data:OFzE8QQAqtDudTOhRw==,iv:uklnFTi5dh+pBb1sLmzOHbs/wBzBUuZuYKcXIttOPLg=,tag:pdtynOyGJt6paYTwNank1Q==,type:str]"
+						}
+					],
+					"lighthouseModuleId": "D2.NP128.512.1xE25-2.0.2x800.2xN1600.0.0",
+					"updatable": [
+						"accessCredentials",
+						"allocated",
+						"allocatedFor",
+						"rackElevationStart",
+						"rackElevationEnd",
+						"bayNumber"
+					],
+					"deletable": false,
+					"allocatedFor": "pce",
+					"rackElevationStart": 7,
+					"rackElevationEnd": 7
+				}
+			],
+			"updatable": true,
+			"deletable": false
+		}
+	],
+	"sops": {
+		"kms": [
+			{
+				"arn": "arn:aws:kms:us-west-2:466322112543:key/4cfa36c4-1c8f-46b5-adc3-54deab8d28e2",
+				"role": "arn:aws:iam::466322112543:role/sops-common-services-role",
+				"created_at": "2023-02-27T21:30:19Z",
+				"enc": "AQICAHiptpDoQ70Fm6fFje1NatVxbLcWnB/GkhvuqeheVEFe4wGC1hJdAhXX07wQEx1yEibTAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM877CyLn9iReDNNEnAgEQgDvNC8IN+YmfdM0WCsIUWFi3sh1ZkoI/6kYRv7NMQAfWQLlHJg1/buH+S3fw6NoRg0A2I+Q8aNddpI7rZA==",
+				"aws_profile": ""
+			}
+		],
+		"gcp_kms": null,
+		"azure_kv": null,
+		"hc_vault": null,
+		"age": null,
+		"lastmodified": "2023-02-27T21:30:20Z",
+		"mac": "ENC[AES256_GCM,data:Oo9+LT2Be/hwQXumnK9sFVxesErz5aXxo7x6dKsOo2w958g2K3HwEop3iTziy7JvPEcsDtVy2mwq/YQIOaZUTNjUIruYyQO+yp2enNUCIqnVNONLyPtucsWgRFQwYL383EDCYbizsd+EX1urRHRK0N3lfRGxukxB0jp3Ra1K+ak=,iv:H1kT6Y4iLrHGet1Um6cckg5dxC8Frt7KkQFeH/yOHUM=,tag:mVjCh57KoXVm/8+0saZpFA==,type:str]",
+		"pgp": null,
+		"encrypted_regex": "userName|password|adminPassword|authenticationPassPhrase|encryptionPassPhrase|httpProxy|httpsProxy|proxyUrl",
+		"version": "3.7.1"
+	}
+}

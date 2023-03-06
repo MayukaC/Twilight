@@ -2,30 +2,33 @@
 import os
 import json
 
+base_configurations_list = []
+json_object = {}
+
+base_configuration_file = "base-configuration.json"
+infra_layout_file = "infra-layout.json"
+
+# running locally:- /home/mayuka/go/src/github.com/hpe-hcss/Twilight/tenants
+
 def main():
-    base_configurations_list = []
-    json_object = {}
-    directory = os.getcwd()
-    print(directory)
-    print(list(os.walk("tenants")))
     for path, _, files in os.walk("tenants"):
         for file in files:
             if file.startswith("base-configuration.json"):
-                base_configurations_list.append(os.path.join(path, file))
-    print(base_configurations_list)
+                base_configurations_list.append(path)
+
+    values = []
 
     for scidFilePath in base_configurations_list:
-        values = []
-        with open(scidFilePath) as f:
+        temp = {}
+        with open(scidFilePath + "/" + infra_layout_file) as f:
+            data = json.load(f)
+            temp['tenantID'] = data['tenantId']
+            temp['siteID'] = data['siteId']
+        with open(scidFilePath + "/" + base_configuration_file) as f:
             data = json.load(f)
             addresses = data['customer']['addresses']
             for address in addresses:
                 if address['type'] == "installation":
-                    temp = {}
-                    # scidFilePath - 'tenants/HPEGreenLakeCOE-c2cc1mvs57r58ikoq8d0/service-instances/b90f395e-a4af-5a5a-ae1d-f9a08574fb98/scid/base-configuration.json'
-                    splitList = scidFilePath.split('/')
-                    temp['tenantID'] = splitList[1].split('-')[1]
-                    temp['siteID'] = splitList[3]
                     temp['city'] = address['city']
                     temp['state'] = address['state']
                     temp['country'] = address['country']
@@ -34,7 +37,7 @@ def main():
     json_object['config'] = values
 
     jsonString = json.dumps(json_object)
-    jsonFile = open("scidConfig.json", "w")
+    jsonFile = open("scidInfos.json", "w")
     jsonFile.write(jsonString)
     jsonFile.close()
 
