@@ -42,7 +42,7 @@ jobs:
           args: create configmap -n pcaas test-mc-config --from-file scidConfig.json -o yaml --dry-run > scidconfigmap.json
 
       - name: Deploy ConfigMap in PCaaS Namespace
-        uses: kodermax/kubectl-aws-eks@master
+        uses: kodermax/kubectl-aws-eks@v1.0.8
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         with:
