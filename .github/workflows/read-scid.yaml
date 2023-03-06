@@ -33,16 +33,34 @@ jobs:
         run: |
           ./.github/workflows/pce-scid-scripts/script.py
 
-      - name: Generate SCID-ConfigMap Mainfest file
-        uses: actions-hub/kubectl@master
+      - name: Run script to generate SCID-Infos json file
+        run: |
+          ./.github/workflows/pce-scid-scripts/script.py
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-        with:
-          args: create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
 
-      - name: Deploy SCID-ConfigMap in PCaaS Namespace
-        uses: actions-hub/kubectl@master
-        env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+      - name: Set Kubernetes Context
+        uses: azure/k8s-set-context@v1
         with:
-          args: apply -f scidconfigmap.json
+          method: kubeconfig
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+
+      - name: Deploy to Cluster
+        run: |
+          kubectl create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
+          kubectl apply -f scidconfigmap.json
+
+
+      # - name: Generate SCID-ConfigMap Mainfest file
+      #   uses: actions-hub/kubectl@master
+      #   env:
+      #     KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+      #   with:
+      #     args: create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
+
+      # - name: Deploy SCID-ConfigMap in PCaaS Namespace
+      #   uses: actions-hub/kubectl@master
+      #   env:
+      #     KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+      #   with:
+      #     args: apply -f scidconfigmap.json
