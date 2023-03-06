@@ -38,7 +38,7 @@ jobs:
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         with:
-          args: create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json -o yaml --dry-run > scidconfigmap.json
+          args: create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
 
       - name: Deploy SCID-ConfigMap in PCaaS Namespace
         uses: Jberlinsky/kubernetes-action@master
