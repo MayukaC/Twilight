@@ -1,10 +1,9 @@
 import os
 import json
 
-base_configurations_list = []
-json_object = {}
-
 def main():
+    base_configurations_list = []
+    json_object = {}
     directory = os.getcwd()
     print(directory)
     for path, _, files in os.walk("tenants"):
