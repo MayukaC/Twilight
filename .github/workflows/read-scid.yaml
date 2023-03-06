@@ -1,0 +1,40 @@
+# (c) Copyright 2023 Hewlett Packard Enterprise Development LP
+
+name: Read SCID to ConfigMap for PCE
+
+on:
+ pull_request:
+   paths:
+   - '**'
+
+# on:
+#   push:
+#     branches:
+#       - master
+
+jobs:
+  tunnel-operations:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Master Branch
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
+        with:
+          fetch-depth: 0
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@67fbcbb121271f7775d2e7715933280b06314838
+        with:
+          aws-access-key-id: ${{ secrets.AWS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+          aws-region: us-east-1
+
+      - name: Run script to generate config json file
+        run: |
+          pwd
+          ./.github/workflows/pce-scid-scripts/script.py
+
+      - uses: danielr1996/kubectl-action@1.0.0
+        name: Deploy
+        with:
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+          args: create configmap test-mc-config --from-file scidConfig.json -o yaml --dry-run=client -n pcaas | kubectl apply -f -
