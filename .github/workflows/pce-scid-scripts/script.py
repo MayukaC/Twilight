@@ -5,6 +5,8 @@ base_configurations_list = []
 json_object = {}
 
 def main():
+    directory = os.getcwd()
+    print(directory)
     for path, _, files in os.walk("tenants"):
         for file in files:
             if file.startswith("base-configuration.json"):
