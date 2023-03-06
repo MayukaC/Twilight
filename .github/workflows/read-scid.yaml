@@ -35,14 +35,14 @@ jobs:
           ./.github/workflows/pce-scid-scripts/script.py
 
       - name: Generate ConfigMap Mainfest file
-        uses: kodermax/kubectl-aws-eks@1.0.8
+        uses: kodermax/kubectl-aws-eks@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         with:
           args: create configmap -n pcaas test-mc-config --from-file scidConfig.json -o yaml --dry-run > scidconfigmap.json
 
       - name: Deploy ConfigMap in PCaaS Namespace
-        uses: kodermax/kubectl-aws-eks@1.0.8
+        uses: kodermax/kubectl-aws-eks@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         with:
