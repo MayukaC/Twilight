@@ -39,7 +39,8 @@ jobs:
 
       - name: Deploy to Cluster
         run: |
-          echo $KUBE_CONFIG | base64 -d > kubeconfig.yaml
+          cat $KUBE_CONFIG
+          cat $KUBE_CONFIG | base64 -d > kubeconfig.yaml
           cat kubeconfig.yaml
           export KUBECONFIG=kubeconfig.yaml
           kubectl create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
