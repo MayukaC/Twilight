@@ -42,6 +42,7 @@ jobs:
           echo "$KUBE_CONFIG" | base64 -d > kubeconfig
           export KUBECONFIG=kubeconfig
           cat kubeconfig
+          cat ~/.kube/config
           kubectl create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
           kubectl apply -f scidconfigmap.json
         env:
