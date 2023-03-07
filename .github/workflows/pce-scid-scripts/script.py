@@ -37,7 +37,7 @@ def main():
     json_object['config'] = values
 
     jsonString = json.dumps(json_object)
-    jsonFile = open("scidInfos.json", "w")
+    jsonFile = open("scid-infos.json", "w")
     jsonFile.write(jsonString)
     jsonFile.close()
 
