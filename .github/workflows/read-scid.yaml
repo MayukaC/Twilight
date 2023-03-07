@@ -33,15 +33,15 @@ jobs:
         run: |
           ./.github/workflows/pce-scid-scripts/script.py
 
-      - name: Run script to generate SCID-Infos json file
+      - name: Install AWS IAM Authenticator
         run: |
-          ./.github/workflows/pce-scid-scripts/script.py
+          curl -Lo aws-iam-authenticator https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.5.9/aws-iam-authenticator_0.5.9_linux_amd64
+          cp aws-iam-authenticator /usr/bin/
+          chmod +x /usr/bin/aws-iam-authenticator
 
       - name: Deploy to Cluster
         run: |
           echo "$KUBE_CONFIG" | base64 -d > kubeconfig
-          export KUBECONFIG=kubeconfig
-          cat kubeconfig
           kubectl create configmap --kubeconfig=kubeconfig -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
           kubectl apply -f scidconfigmap.json
         env:
