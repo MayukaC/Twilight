@@ -36,19 +36,15 @@ jobs:
       - name: Run script to generate SCID-Infos json file
         run: |
           ./.github/workflows/pce-scid-scripts/script.py
-        env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-
-      - name: Set Kubernetes Context
-        uses: azure/k8s-set-context@v1
-        with:
-          method: kubeconfig
-          kubeconfig: ${{ secrets.KUBE_CONFIG }}
 
       - name: Deploy to Cluster
         run: |
+          cat $KUBE_CONFIG | base64 -d > kubeconfig.yaml
+          export KUBECONFIG=kubeconfig.yaml
           kubectl create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
           kubectl apply -f scidconfigmap.json
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
 
 
       # - name: Generate SCID-ConfigMap Mainfest file
