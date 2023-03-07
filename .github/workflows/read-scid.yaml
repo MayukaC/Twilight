@@ -43,7 +43,7 @@ jobs:
         run: |
           echo "$KUBE_CONFIG" | base64 -d > kubeconfig
           kubectl create configmap --kubeconfig=kubeconfig -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
-          kubectl apply -f scidconfigmap.json
+          kubectl apply --kubeconfig=kubeconfig -n pcaas -f scidconfigmap.json
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
 
