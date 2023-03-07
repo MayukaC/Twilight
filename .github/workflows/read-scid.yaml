@@ -39,7 +39,7 @@ jobs:
           sudo cp aws-iam-authenticator /usr/bin/
           sudo chmod +x /usr/bin/aws-iam-authenticator
 
-      - name: Deploy to Cluster
+      - name: Deploy SCID-ConfigMap to PCaaS Namespace
         run: |
           echo "$KUBE_CONFIG" | base64 -d > kubeconfig
           kubectl create configmap --kubeconfig=kubeconfig -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
@@ -47,17 +47,3 @@ jobs:
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
 
-
-      # - name: Generate SCID-ConfigMap Mainfest file
-      #   uses: actions-hub/kubectl@master
-      #   env:
-      #     KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-      #   with:
-      #     args: create configmap -n pcaas pcaas-scid-configuration --from-file scidInfos.json --dry-run -o yaml > scidconfigmap.json
-
-      # - name: Deploy SCID-ConfigMap in PCaaS Namespace
-      #   uses: actions-hub/kubectl@master
-      #   env:
-      #     KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-      #   with:
-      #     args: apply -f scidconfigmap.json
