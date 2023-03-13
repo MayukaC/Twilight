@@ -1,0 +1,49 @@
+# (c) Copyright 2023 Hewlett Packard Enterprise Development LP
+
+name: Read SCID to ConfigMap for PCE
+
+on:
+ pull_request:
+   paths:
+   - '**'
+
+# on:
+#   push:
+#     branches:
+#       - master
+
+jobs:
+  deploy-scid-configmap:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout Master Branch
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
+        with:
+          fetch-depth: 0
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@67fbcbb121271f7775d2e7715933280b06314838
+        with:
+          aws-access-key-id: ${{ secrets.AWS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+          aws-region: us-east-1
+
+      - name: Run script to generate SCID-Infos json file
+        run: |
+          ./.github/workflows/pce-scid-scripts/script.py
+
+      - name: Install AWS IAM Authenticator
+        run: |
+          curl -Lo aws-iam-authenticator https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.5.9/aws-iam-authenticator_0.5.9_linux_amd64
+          sudo cp aws-iam-authenticator /usr/bin/
+          sudo chmod +x /usr/bin/aws-iam-authenticator
+
+      - name: Deploy SCID-ConfigMap to PCaaS Namespace
+        run: |
+          echo "$KUBE_CONFIG" | base64 -d > kubeconfig
+          kubectl create configmap --kubeconfig=kubeconfig -n pcaas pcaas-scid-configuration --from-file scid-infos.json --dry-run -o yaml > scidconfigmap.json
+          kubectl apply --kubeconfig=kubeconfig -n pcaas -f scidconfigmap.json
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+
